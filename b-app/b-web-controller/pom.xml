@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ttknp</groupId>
-    <artifactId>sumary-spring-boot-career</artifactId>
+    <artifactId>b-web-controller</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sumary-spring-boot-career</name>
-    <description>sumary-spring-boot-career</description>
+    <name>b-web-controller</name>
+    <description>b-web-controller</description>
     <url/>
     <licenses>
         <license/>
@@ -30,19 +30,22 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
-        <!--
-             if you wanna see what dependencies of dependency you add
-             Ctrl + (click on <artifactId> here </artifactId>)
-        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- -->
+        <dependency>
+            <groupId>com.ttknp</groupId>
+            <artifactId>b-service-web-controller</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
