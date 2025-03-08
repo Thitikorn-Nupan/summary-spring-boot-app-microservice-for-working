@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ttknp</groupId>
-    <artifactId>a-runner</artifactId>
+    <artifactId>b-service-web-controller</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>a-runner</name>
-    <description>a-runner</description>
+    <name>b-service-web-controller</name>
+    <description>b-service-web-controller</description>
     <url/>
     <licenses>
         <license/>
@@ -41,26 +41,18 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- multiple modules
-             ** abc-log-service for config and set (logback) logging
-             ** a-web-controller for rest api (no database)
-         -->
-        <!--<dependency>
-            <groupId>com.ttknp</groupId>
-            <artifactId>a-log-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>-->
         <dependency>
-            <groupId>com.ttknp</groupId>
-            <artifactId>abc-log-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>6.2.3</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.ttknp</groupId>
-            <artifactId>a-web-controller</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>6.2.3</version>
+            <scope>compile</scope>
         </dependency>
-
     </dependencies>
 
     <build>

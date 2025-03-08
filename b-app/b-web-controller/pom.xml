@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ttknp</groupId>
-    <artifactId>a-runner</artifactId>
+    <artifactId>b-web-controller</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>a-runner</name>
-    <description>a-runner</description>
+    <name>b-web-controller</name>
+    <description>b-web-controller</description>
     <url/>
     <licenses>
         <license/>
@@ -32,7 +32,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
@@ -41,26 +41,12 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- multiple modules
-             ** abc-log-service for config and set (logback) logging
-             ** a-web-controller for rest api (no database)
-         -->
-        <!--<dependency>
-            <groupId>com.ttknp</groupId>
-            <artifactId>a-log-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>-->
+        <!-- -->
         <dependency>
             <groupId>com.ttknp</groupId>
-            <artifactId>abc-log-service</artifactId>
+            <artifactId>b-service-web-controller</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.ttknp</groupId>
-            <artifactId>a-web-controller</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
     </dependencies>
 
     <build>

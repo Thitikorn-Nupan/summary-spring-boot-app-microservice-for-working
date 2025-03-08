@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ttknp</groupId>
-    <artifactId>a-runner</artifactId>
+    <artifactId>b-runner</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>a-runner</name>
-    <description>a-runner</description>
+    <name>b-runner</name>
+    <description>b-runner</description>
     <url/>
     <licenses>
         <license/>
@@ -41,15 +41,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- multiple modules
-             ** abc-log-service for config and set (logback) logging
-             ** a-web-controller for rest api (no database)
-         -->
-        <!--<dependency>
-            <groupId>com.ttknp</groupId>
-            <artifactId>a-log-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>-->
         <dependency>
             <groupId>com.ttknp</groupId>
             <artifactId>abc-log-service</artifactId>
@@ -57,7 +48,7 @@
         </dependency>
         <dependency>
             <groupId>com.ttknp</groupId>
-            <artifactId>a-web-controller</artifactId>
+            <artifactId>b-web-controller</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

@@ -30,6 +30,10 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
+        <!--
+             if you wanna see what dependencies of dependency you add
+             Ctrl + (click on <artifactId> here </artifactId>)
+        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

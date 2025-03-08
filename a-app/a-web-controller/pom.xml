@@ -43,7 +43,13 @@
 
 		<!-- multiple modules
 			 ** a-service-web-controller for import custom annotations , exception handle
+			 ** abc-log-service for config logging
 		-->
+		<dependency>
+			<groupId>com.ttknp</groupId>
+			<artifactId>abc-log-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>com.ttknp</groupId>
 			<artifactId>a-service-web-controller</artifactId>
