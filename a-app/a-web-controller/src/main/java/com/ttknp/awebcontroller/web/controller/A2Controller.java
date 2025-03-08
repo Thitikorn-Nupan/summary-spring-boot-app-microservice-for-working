@@ -1,5 +1,6 @@
 package com.ttknp.awebcontroller.web.controller;
 
+import com.ttknp.aservicewebcontroller.exception.ContentNotAllowed;
 import com.ttknp.aservicewebcontroller.webannotations.CommonRestAPI;
 import com.ttknp.awebcontroller.entity.Student;
 import com.ttknp.awebcontroller.service.StudentService;
@@ -26,7 +27,8 @@ public class A2Controller {
 	@ResponseStatus(HttpStatus.OK)
 	private Student retrieveDemoStudentFromDataSet(@RequestParam(name = "id", required = true) int id) throws Exception {
 		if (id <= 0) {
-			throw new Exception("Bad requested param");
+			// my handle exception is on "a-service-web-controller"
+			throw new ContentNotAllowed("Bad requested param");
 		}
 		return studentService.getStudentById(id);
 	}
