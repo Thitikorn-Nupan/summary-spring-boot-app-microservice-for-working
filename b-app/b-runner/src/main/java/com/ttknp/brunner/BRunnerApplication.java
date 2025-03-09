@@ -15,3 +15,13 @@ public class BRunnerApplication {
     }
 
 }
+
+/*create table USERS
+(
+    USERNAME CHARACTER VARYING(60)  not null
+        primary key,
+    MAIL     CHARACTER VARYING(100) not null,
+    ID       INTEGER auto_increment
+        constraint USERS_PK
+            unique
+);*/
