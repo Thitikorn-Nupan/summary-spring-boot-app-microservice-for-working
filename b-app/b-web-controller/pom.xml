@@ -47,6 +47,13 @@
             <artifactId>b-service-web-controller</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <!-- connect db h2 and import service database  -->
+        <dependency>
+            <groupId>com.ttknp</groupId>
+            <artifactId>abc-helper-connect-database-h2</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
