@@ -11,23 +11,10 @@ import org.springframework.web.bind.annotation.*;
 @CommonRestAPI(value = "/b")
 public class BController {
 
-    private UserH2Service userH2Service;
-
-    @Autowired
-    public BController(UserH2Service userH2Service) {
-        this.userH2Service = userH2Service;
-    }
-
-
     @GetMapping(value = {"/","","/hello-world"})
     private @ResponseBody @ResponseStatus(HttpStatus.OK) String helloWorld() {
         return "Hello World Form B Web Controller!";
     }
 
-    @GetMapping(value = "/userH2")
-    private @ResponseBody @ResponseStatus(HttpStatus.OK) String userH2() {
-            userH2Service.testSelectAll();
-            return "Hello World Form B Web Controller!";
-    }
 
 }
