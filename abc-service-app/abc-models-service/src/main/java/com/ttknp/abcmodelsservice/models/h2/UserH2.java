@@ -1,4 +1,4 @@
-package com.ttknp.abchelperconnectdatabaseh2.entities;
+package com.ttknp.abcmodelsservice.models.h2;
 
 public class UserH2 {
     private Long id;
