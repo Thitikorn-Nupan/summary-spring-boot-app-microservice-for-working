@@ -45,6 +45,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- my modules for model class-->
+		<dependency>
+			<groupId>com.ttknp</groupId>
+			<artifactId>abc-models-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ttknp</groupId>
+			<artifactId>abc-log-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

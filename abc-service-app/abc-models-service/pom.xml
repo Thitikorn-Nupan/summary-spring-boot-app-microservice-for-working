@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ttknp</groupId>
-    <artifactId>b-runner</artifactId>
+    <artifactId>abc-models-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>b-runner</name>
-    <description>b-runner</description>
+    <name>abc-models-service</name>
+    <description>abc-models-service</description>
     <url/>
     <licenses>
         <license/>
@@ -40,20 +40,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-
-        <!-- my modules import block -->
-        <dependency>
-            <groupId>com.ttknp</groupId>
-            <artifactId>abc-log-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.ttknp</groupId>
-            <artifactId>b-web-controller</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
     </dependencies>
 
     <build>
