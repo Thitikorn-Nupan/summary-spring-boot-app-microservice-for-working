@@ -33,8 +33,10 @@
         <java.version>17</java.version>
     </properties>
 
+    <!-- importance *** for profiles tag-->
     <modules>
         <module>../../b-app/b-runner</module>
+        <module>../../a-app/a-runner</module>
     </modules>
 
     <dependencyManagement>
@@ -70,6 +72,11 @@
             </activation>
 
             <properties>
+
+                <area.a.runner>
+                    spring.application.name=a-runner
+                    server.port=8081
+                </area.a.runner>
 
                 <area.b.runner>
                     spring.application.name=b-runner
