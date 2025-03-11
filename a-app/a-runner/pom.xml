@@ -3,10 +3,24 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <!--<groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-parent</artifactId>
+             <version>3.4.3</version>-->
+        <!--
+            *** default parent module
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>3.4.3</version>
+        -->
+        <!--
+            change to my parent module
+            so now in application.properties
+            can on parent module at pom.xml file
+        -->
+        <groupId>com.ttknp</groupId>
+        <artifactId>abc-properties-service</artifactId>
+        <relativePath>../../abc-parent/abc-properties-service</relativePath>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.ttknp</groupId>
     <artifactId>a-runner</artifactId>
@@ -30,7 +44,7 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
@@ -39,7 +53,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
 
         <!-- multiple modules
              ** abc-log-service for config and set (logback) logging
@@ -64,10 +78,37 @@
     </dependencies>
 
     <build>
+        <!--
+            i have to add this because i can't access @area.b.runner@ it's not found *** see by ctrl (hold) + click left
+            so i fix by add
+            <resources>
+                <resource>
+                    <directory>src/main/resources</directory>
+                    <filtering>true</filtering>
+                </resource>
+            </resources>
+        -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- for parent -->
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
+                <executions>
+                    <execution>
+                        <!--<goals>
+                            <goal>read-project-properties</goal>
+                        </goals>-->
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
