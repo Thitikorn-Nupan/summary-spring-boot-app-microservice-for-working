@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/a-log-service/pom.xml" />
+        <option value="$PROJECT_DIR$/a-app/a-log-service/pom.xml" />
+        <option value="$PROJECT_DIR$/a-app/a-web-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/a-runner/pom.xml" />
+        <option value="$PROJECT_DIR$/a-app/a-runner/pom.xml" />
+        <option value="$PROJECT_DIR$/a-app/a-service-web-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/abc-service-app/abc-log-service/pom.xml" />
+        <option value="$PROJECT_DIR$/b-runner/pom.xml" />
+        <option value="$PROJECT_DIR$/b-app/b-runner/pom.xml" />
+        <option value="$PROJECT_DIR$/b-app/b-web-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/b-app/b-service-web-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/pom.xml" />
+        <option value="$PROJECT_DIR$/abc-service-app/abc-models-service/pom.xml" />
+        <option value="$PROJECT_DIR$/abc-parent/abc-properties-service/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/a-app/a-log-service/pom.xml" />
+        <option value="$PROJECT_DIR$/b-runner/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
