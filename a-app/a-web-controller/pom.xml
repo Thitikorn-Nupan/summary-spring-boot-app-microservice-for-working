@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.3</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>com.ttknp</groupId>
+		<artifactId>abc-properties-service</artifactId>
+		<relativePath>../../abc-parent/abc-properties-service</relativePath>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.ttknp</groupId>
 	<artifactId>a-web-controller</artifactId>
@@ -59,9 +59,47 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>3.1.3</version>
+				<executions>
+					<execution>
+						<id>abc-log-service</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<groupId>com.ttknp</groupId>
+							<artifactId>abc-log-service</artifactId>
+							<version>0.0.1-SNAPSHOT</version>
+							<packaging>jar</packaging>
+							<file>${basedir}/libs/abc-log-service.jar</file>
+						</configuration>
+					</execution>
+
+					<execution>
+						<id>a-service-web-controller</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<groupId>com.ttknp</groupId>
+							<artifactId>a-service-web-controller</artifactId>
+							<version>0.0.1-SNAPSHOT</version>
+							<packaging>jar</packaging>
+							<file>${basedir}/libs/a-service-web-controller.jar</file>
+						</configuration>
+					</execution>
+
+
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

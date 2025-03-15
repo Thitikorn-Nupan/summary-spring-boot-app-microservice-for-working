@@ -1,0 +1,4 @@
+com\ttknp\awebcontroller\entity\Student.class
+com\ttknp\awebcontroller\web\controllers\A1Controller.class
+com\ttknp\awebcontroller\service\StudentService.class
+com\ttknp\awebcontroller\web\controllers\A2Controller.class

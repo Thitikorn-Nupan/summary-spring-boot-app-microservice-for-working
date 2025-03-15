@@ -1,0 +1,3 @@
+com\ttknp\bservicewebcontroller\webannotations\CommonRestAPI.class
+com\ttknp\bservicewebcontroller\exception\ContentNotAllowed.class
+com\ttknp\bservicewebcontroller\exception\ExceptionHandle.class
