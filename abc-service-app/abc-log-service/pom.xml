@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.ttknp</groupId>
+        <artifactId>abc-properties-service</artifactId>
+        <relativePath>../../abc-parent/abc-properties-service</relativePath>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.ttknp</groupId>
     <artifactId>abc-log-service</artifactId>
@@ -42,6 +42,8 @@
         </dependency>
     </dependencies>
 
+    <!--
+    build with main class
     <build>
         <plugins>
             <plugin>
@@ -50,5 +52,6 @@
             </plugin>
         </plugins>
     </build>
+    -->
 
 </project>
