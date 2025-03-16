@@ -68,17 +68,17 @@
                 <version>3.1.3</version>
                 <executions>
                     <execution>
-                        <id>abc-log-service</id>
+                        <id>abc-helper-connect-database-h2</id>
                         <phase>initialize</phase>
                         <goals>
                             <goal>install-file</goal>
                         </goals>
                         <configuration>
                             <groupId>com.ttknp</groupId>
-                            <artifactId>abc-log-service</artifactId>
+                            <artifactId>abc-helper-connect-database-h2</artifactId>
                             <version>0.0.1-SNAPSHOT</version>
                             <packaging>jar</packaging>
-                            <file>${basedir}/libs/abc-log-service.jar</file>
+                            <file>${jar.local.path}/abc-helper-connect-database-h2.jar</file>
                         </configuration>
                     </execution>
 
@@ -93,7 +93,7 @@
                             <artifactId>b-service-web-controller</artifactId>
                             <version>0.0.1-SNAPSHOT</version>
                             <packaging>jar</packaging>
-                            <file>${basedir}/libs/b-service-web-controller.jar</file>
+                            <file>${jar.local.path}/b-service-web-controller.jar</file>
                         </configuration>
                     </execution>
 

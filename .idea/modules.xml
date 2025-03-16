@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/sumary-spring-boot-career.iml" filepath="$PROJECT_DIR$/sumary-spring-boot-career.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sumary-spring-boot-career.iml" filepath="$PROJECT_DIR$/.idea/sumary-spring-boot-career.iml" />
     </modules>
   </component>
 </project>
