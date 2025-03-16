@@ -49,11 +49,11 @@
              ** abc-log-service for config and set (logback) logging
              ** a-web-controller for rest api (no database)
          -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.ttknp</groupId>
             <artifactId>abc-log-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>com.ttknp</groupId>
