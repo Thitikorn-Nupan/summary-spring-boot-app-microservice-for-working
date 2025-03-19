@@ -68,5 +68,35 @@
 			</plugin>
 		</plugins>
 	</build>-->
+	<!--<build>
+		<plugins>
+			&lt;!&ndash;
+              if when you build it can't see your multiple module
+              add this config for download your jar before build
+            &ndash;&gt;
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>3.1.3</version>
+				<executions>
+					<execution>
+						<id>a-web-controller</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<groupId>com.ttknp</groupId>
+							<artifactId>a-web-controller</artifactId>
+							<version>0.0.1-SNAPSHOT</version>
+							<packaging>jar</packaging>
+							<file>${jar.local.path}/b-web-controller.jar</file>
+						</configuration>
+					</execution>
 
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>-->
 </project>

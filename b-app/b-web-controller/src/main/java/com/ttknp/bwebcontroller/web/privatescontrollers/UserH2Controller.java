@@ -10,8 +10,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// sometime ide fucking เอ๋อ
+// @RestController
+// @RequestMapping(value = "/b/user-h2")
 @CommonRestAPI(value = "/b/user-h2")
 public class UserH2Controller {
+
 
     private UserH2Service userH2Service;
 
@@ -19,7 +23,6 @@ public class UserH2Controller {
     public UserH2Controller(UserH2Service userH2Service) {
         this.userH2Service = userH2Service;
     }
-
     /*
     // i don't like this way
     @GetMapping(value = {"/", ""})
@@ -27,7 +30,6 @@ public class UserH2Controller {
         return userH2Service.retrieveAllUsers();
     }
     */
-
 
     @GetMapping(value = {"/",""})
     private ResponseEntity<List<UserH2>> retrieveAllUsers() {

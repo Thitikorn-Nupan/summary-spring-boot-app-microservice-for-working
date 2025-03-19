@@ -42,8 +42,10 @@
         </dependency>
     </dependencies>
 
-    <!--<build>
+    <!--
+    <build>
         <plugins>
+            *** no need because i build without out main class
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
