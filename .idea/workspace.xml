@@ -4,56 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed3deec1-058f-4c6b-b77d-f23ad3c6dad9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/configuration/DriverManagerDataSourceConfigByXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/resources/xml/spring-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/a-service-web-controller.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-runner/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-runner/target/a-runner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/target/a-runner.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-runner/target/a-runner.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/target/a-runner.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-runner/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-service-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-service-web-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-service-web-controller/target/a-service-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-service-web-controller/target/a-service-web-controller.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-service-web-controller/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-service-web-controller/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-web-controller/libs/a-service-web-controller.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-web-controller/libs/abc-log-service.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-web-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-web-controller/target/a-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-web-controller/target/a-web-controller.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-web-controller/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-web-controller/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-parent/abc-properties-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-parent/abc-properties-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/abc-helper-connect-database-h2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/abc-helper-connect-database-h2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/abc-log-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/abc-log-service.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/src/main/java/com/ttknp/abcmodelsservice/models/h2/UserH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/src/main/java/com/ttknp/abcmodelsservice/models/h2/UserH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/abc-models-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/abc-models-service.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/classes/com/ttknp/abcmodelsservice/models/h2/UserH2.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/classes/com/ttknp/abcmodelsservice/models/h2/UserH2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/src/main/java/com/ttknp/brunner/BRunnerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/src/main/java/com/ttknp/brunner/BRunnerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/classes/com/ttknp/brunner/BRunnerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/classes/com/ttknp/brunner/BRunnerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-service-web-controller/target/b-service-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-service-web-controller/target/b-service-web-controller.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-service-web-controller/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-service-web-controller/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/src/main/java/com/ttknp/bwebcontroller/web/privatescontrollers/UserH2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/src/main/java/com/ttknp/bwebcontroller/web/privatescontrollers/UserH2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/target/b-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/target/b-web-controller.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/target/classes/com/ttknp/bwebcontroller/web/privatescontrollers/UserH2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/target/classes/com/ttknp/bwebcontroller/web/privatescontrollers/UserH2Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/target/maven-archiver/pom.properties" afterDir="false" />
-    </list>
+    <list default="true" id="ed3deec1-058f-4c6b-b77d-f23ad3c6dad9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742396502151</updated>
-      <workItem from="1742396503438" duration="1301000" />
+      <workItem from="1742396503438" duration="1530000" />
     </task>
     <servers />
   </component>
