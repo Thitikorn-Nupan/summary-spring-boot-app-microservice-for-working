@@ -33,6 +33,11 @@
     <properties>
         <java.version>17</java.version>
         <jar.local.path>B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/libs</jar.local.path>
+        <area.a.server>8081</area.a.server>
+        <area.b.server>8082</area.b.server>
+        <area.b.h2.url>jdbc:h2:B:/h2-database/db/database_b_web_controller</area.b.h2.url>
+        <area.b.h2.username>sa</area.b.h2.username>
+        <area.b.h2.password> </area.b.h2.password>
     </properties>
 
     <!--
@@ -103,21 +108,25 @@
             </activation>
 
             <properties>
-
+                <!-- you can access prop tag by ${...}-->
                 <area.a.runner>
                     spring.application.name=a-runner
-                    server.port=8081
+                    server.port=${area.a.server}
                 </area.a.runner>
 
                 <area.b.runner>
                     spring.application.name=b-runner
-                    server.port=8082
+                    server.port=${area.b.server}
                     logging.level.root[0]=info
                     logging.level.root[1]=debug
-                    spring.datasource.url=jdbc:h2:B:/h2-database/db/database_b_web_controller
-                    spring.datasource.username=sa
-                    spring.datasource.password=
+                    <!--
+                    ** config by properties file it does not need driver class in h2 database
+                    ** but xml need it.
+                    spring.datasource.url=${area.b.h2.url}
+                    spring.datasource.username=${area.b.h2.username}
+                    spring.datasource.password=${area.b.h2.password}
                     spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+                    -->
                     spring.jpa.show-sql=true
                     spring.h2.console.enabled=true
                     spring.h2.console.path=/h2-ui

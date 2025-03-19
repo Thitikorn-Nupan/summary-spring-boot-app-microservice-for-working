@@ -5,9 +5,11 @@ import com.ttknp.abcmodelsservice.models.h2.UserH2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,9 +20,9 @@ public class UserH2Service {
     private List<UserH2> users;
     private Logger log;
 
-    @Autowired
-    public UserH2Service(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
+    @Autowired // ** try manual on mysql
+    public UserH2Service(@Qualifier("dataSourceH2") DataSource dataSource) {
+        this.jdbcTemplate = new JdbcTemplate(dataSource);
         users = new ArrayList<>();
         log = LoggerFactory.getLogger(UserH2Service.class);
     }

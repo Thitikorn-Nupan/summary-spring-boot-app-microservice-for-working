@@ -103,6 +103,7 @@
                             <artifactId>a-web-controller</artifactId>
                             <version>0.0.1-SNAPSHOT</version>
                             <packaging>jar</packaging>
+                            <!-- ${basedir} it ref to main resource of this module  -->
                             <file>${basedir}/libs/a-web-controller.jar</file>
                         </configuration>
                     </execution>

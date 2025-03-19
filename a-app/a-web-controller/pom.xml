@@ -59,10 +59,12 @@
 
 	<build>
 		<plugins>
-			<!--<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>-->
+			<!--*** no need because i build without out main class
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-install-plugin</artifactId>
@@ -79,7 +81,7 @@
 							<artifactId>abc-log-service</artifactId>
 							<version>0.0.1-SNAPSHOT</version>
 							<packaging>jar</packaging>
-							<file>${basedir}/libs/abc-log-service.jar</file>
+							<file>${jar.local.path}/abc-log-service.jar</file>
 						</configuration>
 					</execution>
 
@@ -94,7 +96,7 @@
 							<artifactId>a-service-web-controller</artifactId>
 							<version>0.0.1-SNAPSHOT</version>
 							<packaging>jar</packaging>
-							<file>${basedir}/libs/a-service-web-controller.jar</file>
+							<file>${jar.local.path}/a-service-web-controller.jar</file>
 						</configuration>
 					</execution>
 
