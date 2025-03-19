@@ -1,16 +1,13 @@
 package com.ttknp.awebcontroller.web.controllers;
 
 import com.ttknp.aservicewebcontroller.exception.ContentNotAllowed;
-import com.ttknp.aservicewebcontroller.webannotations.CommonRestAPI;
 import com.ttknp.awebcontroller.entity.Student;
 import com.ttknp.awebcontroller.service.StudentService;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 
-@CommonRestAPI(value = "/a2")
+@RestController
+@RequestMapping(value = "/a2")
 public class A2Controller {
 
 	private final StudentService studentService;

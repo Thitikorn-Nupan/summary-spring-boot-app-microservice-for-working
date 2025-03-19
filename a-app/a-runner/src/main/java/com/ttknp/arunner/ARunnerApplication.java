@@ -4,12 +4,21 @@ import com.ttknp.abclogservice.AbcLogServiceApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 // *** specify this spring boot app to scan app on "com.ttknp*" this path
 // *** meaning all multiple modules that start with "com.ttknp*" can work well on this app
 @ComponentScan(basePackages = {"com.ttknp"})
 @SpringBootApplication
+@RestController
+
 public class ARunnerApplication extends AbcLogServiceApplication {
+
+    @GetMapping()
+    private String test(){
+        return "test";
+    }
 
     public ARunnerApplication() {
         super(ARunnerApplication.class);
