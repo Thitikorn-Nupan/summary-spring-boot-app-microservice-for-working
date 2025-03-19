@@ -13,6 +13,7 @@
         <module name="abc-log-service" />
         <module name="abc-models-service" />
         <module name="b-web-controller" />
+        <module name="abc-helper-connect-database-mysql" />
         <module name="a-runner" />
         <module name="a-service-web-controller" />
       </profile>
@@ -24,6 +25,7 @@
       <module name="a-service-web-controller" options="-parameters" />
       <module name="a-web-controller" options="-parameters" />
       <module name="abc-helper-connect-database-h2" options="-parameters" />
+      <module name="abc-helper-connect-database-mysql" options="-parameters" />
       <module name="abc-log-service" options="-parameters" />
       <module name="abc-models-service" options="-parameters" />
       <module name="abc-properties-service" options="-parameters" />
