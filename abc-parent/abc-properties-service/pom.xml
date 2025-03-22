@@ -35,6 +35,7 @@
         <jar.local.path>B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/libs</jar.local.path>
         <area.a.server>8081</area.a.server>
         <area.b.server>8082</area.b.server>
+        <area.c.server>8083</area.c.server>
         <area.b.h2.url>jdbc:h2:B:/h2-database/db/database_b_web_controller</area.b.h2.url>
         <area.b.h2.username>sa</area.b.h2.username>
         <area.b.h2.password> </area.b.h2.password>
@@ -51,12 +52,18 @@
 
 
         <module>../../abc-service-app/abc-helper-connect-database-h2</module>
+        <module>../../abc-service-app/abc-helper-connect-database-mysql</module>
         <module>../../abc-service-app/abc-log-service</module>
         <module>../../abc-service-app/abc-models-service</module>
 
         <module>../../b-app/b-runner</module> <!-- for runner -->
         <module>../../b-app/b-web-controller</module>
         <module>../../b-app/b-service-web-controller</module>
+
+
+        <module>../../c-app/c-runner</module> <!-- for runner -->
+        <module>../../c-app/c-web-controller</module>
+
     </modules>
 
     <dependencyManagement>
@@ -131,6 +138,14 @@
                     spring.h2.console.enabled=true
                     spring.h2.console.path=/h2-ui
                 </area.b.runner>
+
+                <area.c.runner>
+                    spring.application.name=c-runner
+                    server.port=${area.c.server}
+                    logging.level.root[0]=info
+                    logging.level.root[1]=debug
+                    spring.jpa.show-sql=true
+                </area.c.runner>
 
 
             </properties>
