@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-243.26053.27">
+    <data-source name="database_b_extra_web_controller" uuid="dd57ce46-50d7-4ceb-a05b-3472adae0980">
+      <database-info product="H2" version="2.2.220 (2023-07-04)" jdbc-version="4.2" driver-name="H2 JDBC Driver" driver-version="2.2.220 (2023-07-04)" dbms="H2" exact-version="2.2.220" exact-driver-version="2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>sa</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="database_b_web_controller" uuid="e3a49cd5-8eb4-467b-8bbe-6f69efc3c0c2">
+      <database-info product="H2" version="2.2.220 (2023-07-04)" jdbc-version="4.2" driver-name="H2 JDBC Driver" driver-version="2.2.220 (2023-07-04)" dbms="H2" exact-version="2.2.220" exact-driver-version="2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>sa</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>
