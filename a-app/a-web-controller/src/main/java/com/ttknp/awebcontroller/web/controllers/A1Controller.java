@@ -8,9 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
-@RestController
-@RequestMapping(value = "/a1")
-// @CommonRestAPI(value = "/a1") // *** ide bug! it can't run app on ide
+//@RestController
+//@RequestMapping(value = "/a1")
+@CommonRestAPI(value = "/a1") // *** ide bug! it can't run app on ide
 public class A1Controller extends AbcLogServiceApplication {
 
 	private final StudentService studentService;

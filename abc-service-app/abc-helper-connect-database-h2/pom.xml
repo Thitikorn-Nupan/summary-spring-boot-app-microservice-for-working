@@ -40,11 +40,13 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!--
+		** have in parent module
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
+		</dependency>-->
 		<!-- my modules for model class-->
 		<dependency>
 			<groupId>com.ttknp</groupId>

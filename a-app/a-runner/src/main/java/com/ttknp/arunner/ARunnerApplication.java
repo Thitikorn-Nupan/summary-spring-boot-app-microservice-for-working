@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @ComponentScan(basePackages = {"com.ttknp"})
 @SpringBootApplication
 @RestController
-
 public class ARunnerApplication extends AbcLogServiceApplication {
 
     @GetMapping()
@@ -26,7 +25,7 @@ public class ARunnerApplication extends AbcLogServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ARunnerApplication.class, args);
-        log.debug("a-runner application started");
+        // log.debug("a-runner application started");
     }
 
 }
