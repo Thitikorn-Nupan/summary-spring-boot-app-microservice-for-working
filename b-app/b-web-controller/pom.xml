@@ -37,8 +37,7 @@
         </dependency>
 
         <!--
-        ** two dependencies for start spring boot are on parent module
-
+        ** have on parent
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
