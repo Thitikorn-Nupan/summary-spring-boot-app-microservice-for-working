@@ -1,5 +1,5 @@
 package com.ttknp.abchelperconnectdatabasemysql.configuration;// ** i'll config xml by java code instead @ImportResource("classpath:xml/spring-context.xml") annotation
-// ** look at b-runner module
+// ** look at c-runner module
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 // Config bean on xml
