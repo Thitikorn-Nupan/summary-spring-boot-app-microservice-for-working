@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="ARunnerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+        <option name="MAIN_CLASS_NAME" value="com.ttknp.arunner.ARunnerApplication" />
+        <module name="a-runner" />
+    </configuration>
+</component>

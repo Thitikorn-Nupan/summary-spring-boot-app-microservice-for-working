@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="BRunnerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+        <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.BRunnerApplication" />
+        <module name="b-runner" />
+    </configuration>
+</component>

@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="CRunnerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+        <option name="MAIN_CLASS_NAME" value="com.ttknp.crunner.CRunnerApplication" />
+        <module name="c-runner" />
+    </configuration>
+</component>

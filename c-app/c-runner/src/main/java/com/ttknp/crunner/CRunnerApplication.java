@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @ComponentScan(basePackages = {"com.ttknp"})
 @SpringBootApplication
-@Configuration
+// @Configuration
 public class CRunnerApplication {
 
     public static void main(String[] args) {

@@ -9,3 +9,4 @@ INSERT INTO products (   name ,  price ,  quantity ,  sku ,  active ) VALUES
                                                                           ( 'VETRESKA Coffee Pet', 355.00, 100, 'VT-103-965VR', 1),
                                                                           ( 'Pet’O 210ml.', 705.00, 100, 'PT-203-965PP', 1),
                                                                           ( 'CERA Waterless', 700.00, 100, 'CX-123-C65LD', 1);
+

@@ -1,3 +1,2 @@
-com\ttknp\abchelperconnectdatabaseh2\configuration\DriverManagerDataSourceConfigByXML.class
+com\ttknp\abchelperconnectdatabaseh2\services\RobotH2Service.class
 com\ttknp\abchelperconnectdatabaseh2\services\UserH2Service.class
-com\ttknp\abchelperconnectdatabaseh2\mysql_cl\MySQL_CL.class
