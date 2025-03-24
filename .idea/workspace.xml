@@ -5,28 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed3deec1-058f-4c6b-b77d-f23ad3c6dad9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/abc-parent/abc-properties-service/src/main/resources/sql/reset-products-mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3a49cd5-8eb4-467b-8bbe-6f69efc3c0c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e3a49cd5-8eb4-467b-8bbe-6f69efc3c0c2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/ARunnerApplication.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/BRunnerApplication.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/CRunnerApplication.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/Compound Modules Runner.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/abc-helper-connect-database-mysql.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/c-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-service-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-service-web-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-web-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-parent/abc-properties-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-parent/abc-properties-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-parent/abc-properties-service/src/main/resources/sql/user-h2.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/configuration/DriverManagerDataSourceConfigByXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/configuration/DriverManagerDataSourceConfigByXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/entity/CustomProductMYSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/entity/CustomProductMYSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-runner/target/a-runner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/target/a-runner.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-runner/target/a-runner.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/target/a-runner.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-runner/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-service-web-controller/target/a-service-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-service-web-controller/target/a-service-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-service-web-controller/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-service-web-controller/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-web-controller/target/a-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-web-controller/target/a-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-web-controller/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-web-controller/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-parent/abc-properties-service/src/main/resources/sql/reset-products-mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/abc-parent/abc-properties-service/src/main/resources/sql/reset-products-mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/abc-helper-connect-database-h2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/abc-helper-connect-database-h2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/RobotH2Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/RobotH2Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/entity/CustomProductMYSQL.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-log-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-log-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/abc-log-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/abc-log-service.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/abc-models-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/abc-models-service.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-service-web-controller/target/b-service-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-service-web-controller/target/b-service-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-service-web-controller/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-service-web-controller/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/target/b-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/target/b-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c-app/c-runner/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-runner/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c-app/c-runner/src/main/java/com/ttknp/crunner/CRunnerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-runner/src/main/java/com/ttknp/crunner/CRunnerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c-app/c-runner/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-runner/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c-app/c-runner/target/classes/com/ttknp/crunner/CRunnerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-runner/target/classes/com/ttknp/crunner/CRunnerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/controllers/CController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/controllers/CController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/privatescontrollers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/privatescontrollers/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/com/ttknp/cwebcontroller/controllers/CController.class" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/com/ttknp/cwebcontroller/controllers/CController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/com/ttknp/cwebcontroller/privatescontrollers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/com/ttknp/cwebcontroller/privatescontrollers/ProductController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +109,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CRunnerApplication.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -98,12 +123,15 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "qa",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-service-app/abc-helper-connect-database-mysql/src/main/resources",
+    "last_opened_file_path": "B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/.run",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
@@ -115,32 +143,20 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\.run" />
+      <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\libs" />
       <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-service-app\abc-helper-connect-database-mysql\src\main\resources" />
       <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\c-app\c-web-controller\src\main\java\com\ttknp\cwebcontroller" />
       <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-service-app\abc-helper-connect-database-mysql\src\main\java\com\ttknp\abchelperconnectdatabasemysql\configuration" />
-      <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-service-app\abc-helper-connect-database-h2\src\main\resources\xml" />
-      <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-parent\abc-properties-service\src\main\resources\xml" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ttknp.bwebcontroller.web.privatescontrollers" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CRunnerApplication">
-    <configuration name="Unnamed" type="CompoundRunConfigurationType">
-      <toRun name="ARunnerApplication" type="SpringBootApplicationConfigurationType" />
-      <toRun name="BRunnerApplication" type="SpringBootApplicationConfigurationType" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Compound.Compound Modules Runner">
     <configuration name="ARunnerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="a-runner" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ttknp.arunner.ARunnerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AbcHelperConnectDatabaseMysqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="abc-helper-connect-database-mysql" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ttknp.abchelperconnectdatabasemysql.AbcHelperConnectDatabaseMysqlApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,18 +175,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CWebControllerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="c-web-controller" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ttknp.cwebcontroller.CWebControllerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Compound.Unnamed" />
+      <item itemvalue="Application.CRunnerApplication" />
+      <item itemvalue="Compound.Compound Modules Runner" />
       <item itemvalue="Spring Boot.CRunnerApplication" />
-      <item itemvalue="Spring Boot.CWebControllerApplication" />
-      <item itemvalue="Spring Boot.AbcHelperConnectDatabaseMysqlApplication" />
       <item itemvalue="Spring Boot.ARunnerApplication" />
       <item itemvalue="Spring Boot.BRunnerApplication" />
     </list>
@@ -197,6 +205,8 @@
       <workItem from="1742558531795" duration="3249000" />
       <workItem from="1742614141588" duration="8106000" />
       <workItem from="1742701061808" duration="6958000" />
+      <workItem from="1742715992188" duration="1149000" />
+      <workItem from="1742825342020" duration="1312000" />
     </task>
     <servers />
   </component>

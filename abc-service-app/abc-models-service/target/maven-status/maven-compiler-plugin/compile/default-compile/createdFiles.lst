@@ -1,1 +1,4 @@
+com\ttknp\abcmodelsservice\models\h2\RobotH2.class
+com\ttknp\abcmodelsservice\models\mysql\ProductMYSQL.class
+com\ttknp\abcmodelsservice\models\mysql_cl\MySQL_CL.class
 com\ttknp\abcmodelsservice\models\h2\UserH2.class

@@ -25,7 +25,7 @@ public class ProductMySQLService {
     private JdbcTemplate jdbcTemplate;
     private List<ProductMYSQL> products;
     private Logger log;
-
+    private String sqlScriptDir = "B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/sql/";
     /*
     // not working
     @Autowired
@@ -48,12 +48,11 @@ public class ProductMySQLService {
     }
     */
 
-
     public void resetProducts() {
         // ** way to query with script sql ** if you want queries response don't do the way
         ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
         // populator.addScripts(new ClassPathResource("fetching-all-products-mysql.sql")); // ClassPathResource class it looks to src of this module
-        populator.addScripts(new FileSystemResource("B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/sql/reset-products-mysql.sql")); // FileSystemResource it looks to abs path
+        populator.addScripts(new FileSystemResource(sqlScriptDir+"reset-products-mysql.sql")); // FileSystemResource it looks to abs path
         populator.execute(Objects.requireNonNull(this.jdbcTemplate.getDataSource())); // by default it'll log queries result on console
     }
 

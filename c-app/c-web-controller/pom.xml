@@ -57,12 +57,37 @@
     </dependencies>
 
     <build>
-        <!--<plugins>
+        <plugins>
+            <!--*** no need because i build without out main class
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-        </plugins>-->
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>3.1.3</version>
+                <executions>
+
+                    <execution>
+                        <id>abc-helper-connect-database-mysql</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <configuration>
+                            <groupId>com.ttknp</groupId>
+                            <artifactId>abc-helper-connect-database-mysql</artifactId>
+                            <version>0.0.1-SNAPSHOT</version>
+                            <packaging>jar</packaging>
+                            <file>${jar.local.path}/abc-helper-connect-database-mysql.jar</file>
+                        </configuration>
+                    </execution>
+
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
