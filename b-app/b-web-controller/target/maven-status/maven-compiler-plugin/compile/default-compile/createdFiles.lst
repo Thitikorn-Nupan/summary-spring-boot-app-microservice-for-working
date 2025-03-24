@@ -1,2 +1,3 @@
 com\ttknp\bwebcontroller\web\controllers\BController.class
 com\ttknp\bwebcontroller\web\privatescontrollers\UserH2Controller.class
+com\ttknp\bwebcontroller\web\privatescontrollers\RobotH2Controller.class

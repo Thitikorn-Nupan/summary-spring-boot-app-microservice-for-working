@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Compound Modules Runner" type="CompoundRunConfigurationType">
+    <toRun name="ARunnerApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="BRunnerApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="CRunnerApplication" type="SpringBootApplicationConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>
