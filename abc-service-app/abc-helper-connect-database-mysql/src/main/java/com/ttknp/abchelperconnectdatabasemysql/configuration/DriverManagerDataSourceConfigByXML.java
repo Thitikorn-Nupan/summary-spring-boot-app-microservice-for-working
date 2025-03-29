@@ -5,6 +5,7 @@ import org.springframework.context.annotation.ImportResource;
 // Config bean on xml
 @Configuration
 // We can import this XML configuration file into a configuration class using the @ImportResource annotation **  It looks at on the resource folder
-@ImportResource("classpath:xml/spring-context-mysql-db.xml") // can import multiple files ** try
+// Multiple connect db
+@ImportResource({"classpath:xml/spring-context-mysql-db.xml","classpath:xml/spring-context-mysql-db-extra.xml"}) // can import multiple files ** try
 public class DriverManagerDataSourceConfigByXML { }
 
