@@ -29,7 +29,7 @@ public class RobotH2Controller {
     private ResponseEntity<List<RobotH2>> retrieveAllRobots() {
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)
-                .body(robotH2Service.retrieveAllRobots());
+                .body(robotH2Service.retrieveAll());
     }
 
 

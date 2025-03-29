@@ -6,9 +6,9 @@
 
     <!-- primary="true" work same @Primary for fix error have the same beans -->
 
-    <bean primary="true" name="dataSourceMySQL" id="dataSourceMySQL" class="org.springframework.jdbc.datasource.DriverManagerDataSource" > <!--destroy-method="close"-->
+    <bean name="dataSourceMySQLExtra" id="dataSourceMySQLExtra" class="org.springframework.jdbc.datasource.DriverManagerDataSource" > <!--destroy-method="close"-->
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/dogs_shop"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/toystore"/>
         <property name="username" value="ttknp"/>
         <property name="password" value="12345"/>
     </bean>
