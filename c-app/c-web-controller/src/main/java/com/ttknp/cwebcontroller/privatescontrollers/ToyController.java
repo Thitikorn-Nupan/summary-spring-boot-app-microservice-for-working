@@ -30,7 +30,7 @@ public class ToyController {
     private ResponseEntity<List<ToyMYSQL>> retrieveAllToys() {
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)
-                .body(toyMYSQLService.getToys());
+                .body(toyMYSQLService.retrieveAll());
     }
 
     /*@PostMapping(value = "/truncate")

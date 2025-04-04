@@ -1,5 +1,6 @@
 package com.ttknp.abchelperconnectdatabasemysql.service;
 
+import com.ttknp.abchelperconnectdatabasemysql.service.common.ModelService;
 import com.ttknp.abcmodelsservice.models.mysql.ProductMYSQL;
 import com.ttknp.abcmodelsservice.models.mysql.ToyMYSQL;
 import com.ttknp.abcmodelsservice.models.mysql_cl.MySQL_CL;
@@ -11,11 +12,13 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class ToyMYSQLService {
+public class ToyMYSQLService extends ModelService<ToyMYSQL> {
     private JdbcTemplate jdbcTemplate;
     private List<ToyMYSQL> products;
     private Logger log;
@@ -25,7 +28,8 @@ public class ToyMYSQLService {
         this.products = new ArrayList<>();
         this.log = LoggerFactory.getLogger(ToyMYSQLService.class);
     }
-    public List<ToyMYSQL> getToys() {
+
+    /* public List<ToyMYSQL> getToys() {
         products = jdbcTemplate.query(MySQL_CL.MYSQL_TOYS_SELECT_ALL, (rs, rowNum) -> {
             ToyMYSQL toyMYSQL = new ToyMYSQL(
                     rs.getLong("tid"),
@@ -37,5 +41,28 @@ public class ToyMYSQLService {
             return toyMYSQL;
         });
         return products;
+    }*/
+
+    @Override
+    public List<ToyMYSQL> retrieveAll() {
+        products = jdbcTemplate.query(MySQL_CL.MYSQL_TOYS_SELECT_ALL, this);
+        return products;
+    }
+
+    @Override
+    public Boolean add(ToyMYSQL toyMYSQL) {
+        return null;
+    }
+
+    @Override
+    public ToyMYSQL mapRow(ResultSet rs, int rowNum) throws SQLException {
+        log.info("row number is {}",rowNum );
+        return new ToyMYSQL(
+                rs.getLong("tid"),
+                rs.getString("name"),
+                rs.getString("status"),
+                rs.getDouble("price"),
+                rs.getTimestamp("release_date")
+        );
     }
 }

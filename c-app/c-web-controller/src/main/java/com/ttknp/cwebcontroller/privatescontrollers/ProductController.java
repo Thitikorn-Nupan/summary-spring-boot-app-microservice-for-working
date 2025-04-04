@@ -28,7 +28,7 @@ public class ProductController {
     private ResponseEntity<List<ProductMYSQL>> retrieveAllProducts() {
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)
-                .body(productMySQLService.getProducts());
+                .body(productMySQLService.retrieveAll());
     }
 
     @PostMapping(value = "/truncate")
