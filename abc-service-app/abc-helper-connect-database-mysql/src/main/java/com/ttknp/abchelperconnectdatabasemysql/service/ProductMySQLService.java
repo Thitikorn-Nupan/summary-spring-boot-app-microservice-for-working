@@ -1,5 +1,6 @@
 package com.ttknp.abchelperconnectdatabasemysql.service;
 
+import com.ttknp.abchelperconnectdatabasemysql.service.common.ModelService;
 import com.ttknp.abcmodelsservice.models.mysql.ProductMYSQL;
 import com.ttknp.abcmodelsservice.models.mysql_cl.MySQL_CL;
 import org.slf4j.Logger;
@@ -12,17 +13,18 @@ import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 @Service
-public class ProductMySQLService {
+public class ProductMySQLService extends ModelService<ProductMYSQL> {
 
     private JdbcTemplate jdbcTemplate;
     private List<ProductMYSQL> products;
     private Logger log;
-    private String sqlScriptDirOnAbs = "B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/sql/";
 
     /*
     // not working
@@ -37,8 +39,7 @@ public class ProductMySQLService {
         this.log = LoggerFactory.getLogger(ProductMySQLService.class);
 
     }
-
-
+    /*
     public void resetProducts() {
         // ** way to query with script sql ** if you want queries response don't do the way
         ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
@@ -61,8 +62,33 @@ public class ProductMySQLService {
             return productMYSQL;
         });
         return products;
+    }*/
+
+
+    public void resetProducts() {
+        loadScriptAbsPath("reset-products-mysql.sql",jdbcTemplate.getDataSource());
     }
 
+    @Override
+    public List<ProductMYSQL> retrieveAll() {
+        products = jdbcTemplate.query(MySQL_CL.MYSQL_PRODUCT_SELECT_ALL,this);
+        return products;
+    }
 
+    @Override
+    public Boolean add(ProductMYSQL productMYSQL) {
+        return null;
+    }
 
+    @Override
+    public ProductMYSQL mapRow(ResultSet rs, int rowNum) throws SQLException {
+        return new ProductMYSQL(
+                rs.getLong("id"),
+                rs.getString("name"),
+                rs.getDouble("price"),
+                rs.getInt("quantity"),
+                rs.getString("sku"),
+                rs.getBoolean("active")
+        );
+    }
 }
