@@ -59,11 +59,10 @@ class ARunnerApplicationTests {
         response.andExpect(status().isOk())
                 .andExpect(content().contentType("text/plain;charset=UTF-8"))
                 .andDo(print());
-
     }
 
     @Test
-    public void testretRieveDemoStudentsFromDataSet() throws Exception {
+    public void testRetrieveDemoStudentsFromDataSet() throws Exception {
         /// ** provide response if service calls ** it's kinda same as when(...).return(...)
         // given - precondition or setup
         given(studentService.getStudents()).willReturn(getStudents());
@@ -84,7 +83,7 @@ class ARunnerApplicationTests {
     }
 
     @Test
-    public void testretRetrieveDemoStudentFromDataSet() throws Exception {
+    public void testRetrieveDemoStudentFromDataSet() throws Exception {
         /// ** provide response if service calls ** it's kinda same as when(...).return(...)
         // given - precondition or setup
         given(studentService.getStudentById(503230)).willReturn(getStudent(503230));

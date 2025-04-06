@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed3deec1-058f-4c6b-b77d-f23ad3c6dad9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/common/ModelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/b-app/b-runner/src/test/java/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a-app/a-runner/src/test/java/com/ttknp/arunner/ARunnerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/src/test/java/com/ttknp/arunner/ARunnerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-runner/target/classes/com/ttknp/arunner/ARunnerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/target/classes/com/ttknp/arunner/ARunnerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-runner/target/test-classes/com/ttknp/arunner/ARunnerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/target/test-classes/com/ttknp/arunner/ARunnerApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ToyMYSQLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ToyMYSQLService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/configuration/DriverManagerDataSourceConfigByXML.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/configuration/DriverManagerDataSourceConfigByXML.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ToyMYSQLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ToyMYSQLService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/privatescontrollers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/privatescontrollers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/privatescontrollers/ToyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/privatescontrollers/ToyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/com/ttknp/cwebcontroller/privatescontrollers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/com/ttknp/cwebcontroller/privatescontrollers/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/com/ttknp/cwebcontroller/privatescontrollers/ToyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/target/classes/com/ttknp/cwebcontroller/privatescontrollers/ToyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/src/test/java/com/ttknp/brunner/BRunnerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/src/test/java/com/ttknp/brunner/BRunnerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/classes/com/ttknp/brunner/BRunnerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/classes/com/ttknp/brunner/BRunnerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/BRunnerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/BRunnerApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +75,17 @@
     "JUnit.ARunnerApplicationTests.testHelloWorld.executor": "Run",
     "JUnit.ARunnerApplicationTests.testretRetrieveDemoStudentFromDataSet.executor": "Run",
     "JUnit.ARunnerApplicationTests.testretRieveDemoStudentsFromDataSet.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.reads.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.reads1.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.testAddOnUserH2Service.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.testConnection.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.testConnections.executor": "Run",
+    "JUnit.BRunnerApplicationTests$UserH2Tests.executor": "Run",
+    "JUnit.BRunnerApplicationTests$UserH2Tests.testRetrieveAllUsers.executor": "Run",
+    "JUnit.BRunnerApplicationTests.executor": "Run",
+    "JUnit.BRunnerApplicationTests.testExceptionHandlerOnRetrieveUser.executor": "Run",
+    "JUnit.BRunnerApplicationTests.testHelloWorld.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -139,81 +143,81 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ARunnerApplicationTests.testretRetrieveDemoStudentFromDataSet">
-    <configuration name="ARunnerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="a-runner" />
+  <component name="RunManager" selected="JUnit.BRunnerApplicationServiceLayerTests">
+    <configuration name="BRunnerApplicationServiceLayerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b-runner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ttknp.arunner.*" />
+          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ttknp.arunner" />
-      <option name="MAIN_CLASS_NAME" value="com.ttknp.arunner.ARunnerApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer" />
+      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ARunnerApplicationTests.t1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="a-runner" />
+    <configuration name="BRunnerApplicationServiceLayerTests.reads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b-runner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ttknp.arunner.*" />
+          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ttknp.arunner" />
-      <option name="MAIN_CLASS_NAME" value="com.ttknp.arunner.ARunnerApplicationTests" />
-      <option name="METHOD_NAME" value="t1" />
+      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer" />
+      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
+      <option name="METHOD_NAME" value="reads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ARunnerApplicationTests.testHelloWorld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="a-runner" />
+    <configuration name="BRunnerApplicationServiceLayerTests.reads1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b-runner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ttknp.arunner.*" />
+          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ttknp.arunner" />
-      <option name="MAIN_CLASS_NAME" value="com.ttknp.arunner.ARunnerApplicationTests" />
-      <option name="METHOD_NAME" value="testHelloWorld" />
+      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer" />
+      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
+      <option name="METHOD_NAME" value="reads1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ARunnerApplicationTests.testretRetrieveDemoStudentFromDataSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="a-runner" />
+    <configuration name="BRunnerApplicationServiceLayerTests.testAddOnUserH2Service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b-runner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ttknp.arunner.*" />
+          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ttknp.arunner" />
-      <option name="MAIN_CLASS_NAME" value="com.ttknp.arunner.ARunnerApplicationTests" />
-      <option name="METHOD_NAME" value="testretRetrieveDemoStudentFromDataSet" />
+      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer" />
+      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
+      <option name="METHOD_NAME" value="testAddOnUserH2Service" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ARunnerApplicationTests.testretRieveDemoStudentsFromDataSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="a-runner" />
+    <configuration name="BRunnerApplicationServiceLayerTests.testConnections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b-runner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ttknp.arunner.*" />
+          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ttknp.arunner" />
-      <option name="MAIN_CLASS_NAME" value="com.ttknp.arunner.ARunnerApplicationTests" />
-      <option name="METHOD_NAME" value="testretRieveDemoStudentsFromDataSet" />
+      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer" />
+      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
+      <option name="METHOD_NAME" value="testConnections" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -245,22 +249,22 @@
       <item itemvalue="Application.BRunnerApplication" />
       <item itemvalue="Application.CRunnerApplication" />
       <item itemvalue="Compound.Compound Modules Runner" />
-      <item itemvalue="JUnit.ARunnerApplicationTests" />
-      <item itemvalue="JUnit.ARunnerApplicationTests.t1" />
-      <item itemvalue="JUnit.ARunnerApplicationTests.testHelloWorld" />
-      <item itemvalue="JUnit.ARunnerApplicationTests.testretRetrieveDemoStudentFromDataSet" />
-      <item itemvalue="JUnit.ARunnerApplicationTests.testretRieveDemoStudentsFromDataSet" />
+      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests" />
+      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.reads" />
+      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.reads1" />
+      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.testAddOnUserH2Service" />
+      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.testConnections" />
       <item itemvalue="Spring Boot.CRunnerApplication" />
       <item itemvalue="Spring Boot.ARunnerApplication" />
       <item itemvalue="Spring Boot.BRunnerApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ARunnerApplicationTests.testretRetrieveDemoStudentFromDataSet" />
-        <item itemvalue="JUnit.ARunnerApplicationTests.testretRieveDemoStudentsFromDataSet" />
-        <item itemvalue="JUnit.ARunnerApplicationTests" />
-        <item itemvalue="JUnit.ARunnerApplicationTests.testHelloWorld" />
-        <item itemvalue="JUnit.ARunnerApplicationTests.t1" />
+        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests" />
+        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.testConnections" />
+        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.testAddOnUserH2Service" />
+        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.reads1" />
+        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.reads" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +296,8 @@
       <workItem from="1742910492357" duration="1496000" />
       <workItem from="1743244349654" duration="924000" />
       <workItem from="1743245826783" duration="7341000" />
-      <workItem from="1743738100161" duration="4077000" />
+      <workItem from="1743738100161" duration="4421000" />
+      <workItem from="1743922944770" duration="11190000" />
     </task>
     <servers />
   </component>
