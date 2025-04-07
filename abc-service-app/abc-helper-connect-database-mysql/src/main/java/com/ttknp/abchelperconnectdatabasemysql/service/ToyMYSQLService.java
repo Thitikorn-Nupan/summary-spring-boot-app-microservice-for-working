@@ -1,7 +1,6 @@
 package com.ttknp.abchelperconnectdatabasemysql.service;
 
 import com.ttknp.abchelperconnectdatabasemysql.service.common.ModelService;
-import com.ttknp.abcmodelsservice.models.mysql.ProductMYSQL;
 import com.ttknp.abcmodelsservice.models.mysql.ToyMYSQL;
 import com.ttknp.abcmodelsservice.models.mysql_cl.MySQL_CL;
 import org.slf4j.Logger;
@@ -52,6 +51,26 @@ public class ToyMYSQLService extends ModelService<ToyMYSQL> {
     @Override
     public Boolean add(ToyMYSQL toyMYSQL) {
         return null;
+    }
+
+    @Override
+    public Boolean edit(ToyMYSQL toyMYSQL, Long pk) {
+        return null;
+    }
+
+    @Override
+    public Boolean remove(Long pk) {
+        return null;
+    }
+
+    @Override
+    public <U> Boolean removeModelByAnything(U uniqueKey) {
+        return null;
+    }
+
+    @Override
+    public <U> void loadScriptAbsPath(String fileName) {
+
     }
 
     @Override

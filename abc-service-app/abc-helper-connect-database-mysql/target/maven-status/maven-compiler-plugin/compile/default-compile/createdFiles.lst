@@ -1,2 +1,4 @@
 com\ttknp\abchelperconnectdatabasemysql\configuration\DriverManagerDataSourceConfigByXML.class
 com\ttknp\abchelperconnectdatabasemysql\service\ProductMySQLService.class
+com\ttknp\abchelperconnectdatabasemysql\service\ToyMYSQLService.class
+com\ttknp\abchelperconnectdatabasemysql\service\common\ModelService.class

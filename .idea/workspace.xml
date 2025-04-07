@@ -5,13 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed3deec1-058f-4c6b-b77d-f23ad3c6dad9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/b-app/b-runner/src/test/java/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a-app/a-runner/src/test/java/com/ttknp/arunner/ARunnerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/src/test/java/com/ttknp/arunner/ARunnerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/src/test/java/com/ttknp/brunner/BRunnerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/src/test/java/com/ttknp/brunner/BRunnerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/classes/com/ttknp/brunner/BRunnerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/classes/com/ttknp/brunner/BRunnerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/BRunnerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/BRunnerApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-runner/libs/a-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-runner/libs/a-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-parent/abc-properties-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-parent/abc-properties-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/RobotH2Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/RobotH2Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/common/ModelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/common/ModelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/abc-helper-connect-database-h2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/abc-helper-connect-database-h2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/RobotH2Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/RobotH2Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/classes/com/ttknp/abchelperconnectdatabaseh2/services/UserH2Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ToyMYSQLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/ToyMYSQLService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/common/ModelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service/common/ModelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/abc-helper-connect-database-mysql.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/abc-helper-connect-database-mysql.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ProductMySQLService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ToyMYSQLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/classes/com/ttknp/abchelperconnectdatabasemysql/service/ToyMYSQLService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/src/main/java/com/ttknp/abcmodelsservice/models/mysql_cl/MySQL_CL.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/src/main/java/com/ttknp/abcmodelsservice/models/mysql_cl/MySQL_CL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/src/test/java/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/src/test/java/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests$UserH2ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests$UserH2ServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/test-classes/com/ttknp/brunner/service_layer/BRunnerApplicationServiceLayerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-service-web-controller/target/b-service-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-service-web-controller/target/b-service-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/target/b-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/target/b-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/controllers/CController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/src/main/java/com/ttknp/cwebcontroller/controllers/CController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/target/c-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/target/c-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/a-service-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/a-service-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/abc-helper-connect-database-h2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/abc-helper-connect-database-h2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/abc-helper-connect-database-mysql.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/abc-helper-connect-database-mysql.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/abc-log-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/abc-log-service.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/b-service-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/b-service-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/b-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/b-web-controller.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/c-web-controller.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/c-web-controller.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +102,9 @@
     "JUnit.ARunnerApplicationTests.testHelloWorld.executor": "Run",
     "JUnit.ARunnerApplicationTests.testretRetrieveDemoStudentFromDataSet.executor": "Run",
     "JUnit.ARunnerApplicationTests.testretRieveDemoStudentsFromDataSet.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.testRemoveByAnythingOnRobotH2Service.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest.testRemoveByAnythingOnUserH2Service.executor": "Run",
     "JUnit.BRunnerApplicationServiceLayerTests.executor": "Run",
     "JUnit.BRunnerApplicationServiceLayerTests.reads.executor": "Run",
     "JUnit.BRunnerApplicationServiceLayerTests.reads1.executor": "Run",
@@ -101,7 +131,7 @@
     "database.data.extractors.current.id": "SQL Inserts",
     "git-widget-placeholder": "qa",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-service-app/abc-helper-connect-database-mysql/src/main/java/com/ttknp/abchelperconnectdatabasemysql/service",
+    "last_opened_file_path": "B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/libs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,11 +152,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\libs" />
+      <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\a-app\a-runner\libs" />
       <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-service-app\abc-helper-connect-database-mysql\src\main\java\com\ttknp\abchelperconnectdatabasemysql\service" />
       <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-service-app\abc-helper-connect-database-mysql\src\main\resources\xml" />
       <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-service-app\abc-helper-connect-database-h2\src\main\resources\sql" />
-      <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-service-app\abc-helper-connect-database-h2\src\main\java\com\ttknp\abchelperconnectdatabaseh2" />
-      <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\.run" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ttknp.cwebcontroller.privatescontrollers" />
@@ -143,7 +173,54 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BRunnerApplicationServiceLayerTests">
+  <component name="RunManager" selected="JUnit.BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.testRemoveByAnythingOnRobotH2Service">
+    <configuration name="BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.testRemoveByAnythingOnRobotH2Service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b-runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
+      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests$RobotH2ServiceTest" />
+      <option name="METHOD_NAME" value="testRemoveByAnythingOnRobotH2Service" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BRunnerApplicationServiceLayerTests$UserH2ServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b-runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
+      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests$UserH2ServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BRunnerApplicationServiceLayerTests$UserH2ServiceTest.testRemoveByAnythingOnUserH2Service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b-runner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
+      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests$UserH2ServiceTest" />
+      <option name="METHOD_NAME" value="testRemoveByAnythingOnUserH2Service" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BRunnerApplicationServiceLayerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="b-runner" />
       <extension name="coverage">
@@ -155,54 +232,6 @@
       <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer" />
       <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BRunnerApplicationServiceLayerTests.reads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="b-runner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer" />
-      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
-      <option name="METHOD_NAME" value="reads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BRunnerApplicationServiceLayerTests.reads1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="b-runner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer" />
-      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
-      <option name="METHOD_NAME" value="reads1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BRunnerApplicationServiceLayerTests.testAddOnUserH2Service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="b-runner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ttknp.brunner.service_layer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ttknp.brunner.service_layer" />
-      <option name="MAIN_CLASS_NAME" value="com.ttknp.brunner.service_layer.BRunnerApplicationServiceLayerTests" />
-      <option name="METHOD_NAME" value="testAddOnUserH2Service" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -249,10 +278,10 @@
       <item itemvalue="Application.BRunnerApplication" />
       <item itemvalue="Application.CRunnerApplication" />
       <item itemvalue="Compound.Compound Modules Runner" />
+      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.testRemoveByAnythingOnRobotH2Service" />
+      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest" />
+      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest.testRemoveByAnythingOnUserH2Service" />
       <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests" />
-      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.reads" />
-      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.reads1" />
-      <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.testAddOnUserH2Service" />
       <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.testConnections" />
       <item itemvalue="Spring Boot.CRunnerApplication" />
       <item itemvalue="Spring Boot.ARunnerApplication" />
@@ -260,11 +289,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.testRemoveByAnythingOnRobotH2Service" />
+        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest.testRemoveByAnythingOnUserH2Service" />
         <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests" />
+        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest" />
         <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.testConnections" />
-        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.testAddOnUserH2Service" />
-        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.reads1" />
-        <item itemvalue="JUnit.BRunnerApplicationServiceLayerTests.reads" />
       </list>
     </recent_temporary>
   </component>
@@ -298,6 +327,7 @@
       <workItem from="1743245826783" duration="7341000" />
       <workItem from="1743738100161" duration="4421000" />
       <workItem from="1743922944770" duration="11190000" />
+      <workItem from="1743994449174" duration="5364000" />
     </task>
     <servers />
   </component>

@@ -81,6 +81,26 @@ public class ProductMySQLService extends ModelService<ProductMYSQL> {
     }
 
     @Override
+    public Boolean edit(ProductMYSQL productMYSQL, Long pk) {
+        return null;
+    }
+
+    @Override
+    public Boolean remove(Long pk) {
+        return null;
+    }
+
+    @Override
+    public <U> Boolean removeModelByAnything(U uniqueKey) {
+        return null;
+    }
+
+    @Override
+    public <U> void loadScriptAbsPath(String fileName) {
+
+    }
+
+    @Override
     public ProductMYSQL mapRow(ResultSet rs, int rowNum) throws SQLException {
         return new ProductMYSQL(
                 rs.getLong("id"),

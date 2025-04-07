@@ -13,6 +13,13 @@ public abstract class ModelService <T> {
     private String sqlScriptDirOnRoot = "sql/";
     public abstract List<T> retrieveAll() ;
     public abstract Boolean add(T t);
+    public abstract Boolean edit(T t,Long pk);
+    public abstract Boolean remove(Long pk);
+    // ** <U> can be any types
+    // ** generic with parameter can be any type
+    public abstract <U> Boolean removeModelByAnything(U uniqueKey);
+    // ** generic with void method
+    public abstract <U> void loadScript(String fileName);
     public void loadScript(String fileName, DataSource dataSource) {
         String fullSqlScriptDirOnRoot = sqlScriptDirOnRoot + fileName;
         // ** way to query with script sql ** if you want queries response don't do the way

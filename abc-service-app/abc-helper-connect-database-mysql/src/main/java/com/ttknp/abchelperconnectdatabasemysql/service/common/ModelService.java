@@ -17,6 +17,13 @@ public abstract class ModelService<T> implements RowMapper<T> {
     private String sqlScriptDirOnAbs = "B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/sql/";
     public abstract List<T> retrieveAll() ;
     public abstract Boolean add(T t);
+    public abstract Boolean edit(T t,Long pk);
+    public abstract Boolean remove(Long pk);
+    // ** <U> can be any types
+    // ** generic with parameter can be any type
+    public abstract <U> Boolean removeModelByAnything(U uniqueKey);
+    // ** generic with void method
+    public abstract <U> void loadScriptAbsPath(String fileName);
     public void loadScriptAbsPath(String fileName, DataSource dataSource) {
         String fullSqlScriptDirOnRoot = sqlScriptDirOnAbs + fileName;
         // ** way to query with script sql ** if you want queries response don't do the way
