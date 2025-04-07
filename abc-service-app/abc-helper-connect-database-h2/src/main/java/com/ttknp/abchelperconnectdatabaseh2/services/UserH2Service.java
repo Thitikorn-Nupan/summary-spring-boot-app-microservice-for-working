@@ -49,11 +49,55 @@ public class UserH2Service extends ModelService<UserH2> {
         Integer row = jdbcTemplate.update(MySQL_CL.H2_USERS_CREATE_NEW,
                 user.getUsername(),
                 user.getMail());
-        log.debug("User row affected : {}" , row);
+        logRowAffected(row);
         if (row > 0) {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public Boolean edit(UserH2 userH2, Long pk) {
+        Integer row = jdbcTemplate.update(MySQL_CL.H2_USERS_UPDATE,
+                userH2.getUsername(),
+                userH2.getMail(),
+                pk
+                );
+        logRowAffected(row);
+        if (row > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public Boolean remove(Long pk) {
+        Integer row = jdbcTemplate.update(MySQL_CL.H2_USERS_DELETE, pk);
+        logRowAffected(row);
+        if (row > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    // *** U can be any types
+    @Override
+    public <U> Boolean removeModelByAnything(U uniqueKey) {
+        Integer row = jdbcTemplate.update(MySQL_CL.H2_USERS_DELETE, uniqueKey);
+        logRowAffected(row);
+        if (row > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public <U> void loadScript(String fileName) {
+
+    }
+
+    private void logRowAffected(Integer row) {
+        log.debug("Users row affected : {}" , row);
     }
 
     /**

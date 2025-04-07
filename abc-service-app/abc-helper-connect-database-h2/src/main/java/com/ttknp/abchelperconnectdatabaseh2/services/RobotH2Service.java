@@ -47,7 +47,62 @@ public class RobotH2Service extends ModelService<RobotH2> {
 
     @Override
     public Boolean add(RobotH2 robotH2) {
+        Integer row = jdbcTemplate.update(MySQL_CL.H2_EXTRA_ROBOT_CREATE_NEW,
+                robotH2.getRid(),
+                robotH2.getCodename(),
+                robotH2.getReleaseDate(),
+                robotH2.getPrice(),
+                robotH2.getStatus());
+        logRowAffected(row);
+        if (row > 0) {
+            return true;
+        }
         return false;
+    }
+
+    @Override
+    public Boolean edit(RobotH2 robotH2, Long pk) {
+        Integer row = jdbcTemplate.update(MySQL_CL.H2_EXTRA_ROBOT_UPDATE,
+                robotH2.getCodename(),
+                robotH2.getReleaseDate(),
+                robotH2.getPrice(),
+                robotH2.getStatus(),
+                pk);
+        logRowAffected(row);
+        if (row > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public Boolean remove(Long pk) {
+        Integer row = jdbcTemplate.update(MySQL_CL.H2_EXTRA_ROBOT_DELETE, pk);
+        logRowAffected(row);
+        if (row > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    // *** U can be any types
+    @Override
+    public <U> Boolean removeModelByAnything(U uniqueKey) {
+        Integer row = jdbcTemplate.update(MySQL_CL.H2_EXTRA_ROBOT_DELETE, uniqueKey);
+        logRowAffected(row);
+        if (row > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public <U> void loadScript(String fileName) {
+
+    }
+
+    private void logRowAffected(Integer row) {
+        log.debug("Robots row affected : {}" , row);
     }
 
     /**

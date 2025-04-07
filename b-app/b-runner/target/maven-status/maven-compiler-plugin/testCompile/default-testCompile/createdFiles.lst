@@ -1,1 +1,6 @@
 com\ttknp\brunner\BRunnerApplicationTests.class
+com\ttknp\brunner\service_layer\BRunnerApplicationServiceLayerTests$UserH2ServiceTest.class
+com\ttknp\brunner\service_layer\BRunnerApplicationServiceLayerTests.class
+com\ttknp\brunner\BRunnerApplicationTests$RobotH2Tests.class
+com\ttknp\brunner\BRunnerApplicationTests$UserH2Tests.class
+com\ttknp\brunner\service_layer\BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.class
