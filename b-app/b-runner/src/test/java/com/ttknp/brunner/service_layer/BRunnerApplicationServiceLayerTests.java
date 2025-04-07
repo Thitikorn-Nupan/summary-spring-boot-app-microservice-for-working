@@ -56,6 +56,7 @@ public class BRunnerApplicationServiceLayerTests  {
 
     @BeforeEach
     void setUp() throws Exception {
+        // loading multiple driver
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setUrl("jdbc:h2:B:/h2-database/db/database_b_web_controller");
         dataSource.setUsername("sa");
@@ -72,7 +73,7 @@ public class BRunnerApplicationServiceLayerTests  {
         jdbcTemplateExtra = new JdbcTemplate(dataSourceExtra);
 
         // the once way to mock services layer in jdbc ** this way is not working : userH2Service = new UserH2Service(jdbcTemplate.getDataSource());
-        // ** you need to create a MOCK of service first, and then use that mock.
+        // ** do this one, you need to create a MOCK of service first, and then use that mock.
         userH2Service = mock(UserH2Service.class);
         robotH2Service = mock(RobotH2Service.class);
     }
@@ -117,22 +118,55 @@ public class BRunnerApplicationServiceLayerTests  {
         @Test
         public void testAddOnUserH2Service() {
             // keep concept mocking
-            /**
-             So, we have to tell Mockito to return something
-             when userRepository.findAll() is called.
-             We do this with the static when method.
-             */
+
             UserH2 userH2 = getUser(1000L);
             when(userH2Service.add(userH2)).thenReturn(true);
-        /*
-        Now users object called userRepository.findAll() passed userService.reads()
-        So it should store list of getUsers() method
-        */
+
             Boolean result = userH2Service.add(userH2);
 
             assertEquals(true,result);
 
             verify(userH2Service, times(1)).add(userH2); // verify (v. ตรวจสอบ) , invocations (n. การร้องขอ)
+        }
+
+        @Test
+        public void testEditOnUserH2Service() {
+            // keep concept mocking
+            Long id = 1000L;
+            UserH2 userH2 = getUser(0L);
+            when(userH2Service.edit(userH2,id)).thenReturn(true);
+
+            Boolean result = userH2Service.edit(userH2,id);
+
+            assertEquals(true,result);
+
+            verify(userH2Service, times(1)).edit(userH2,id); // verify (v. ตรวจสอบ) , invocations (n. การร้องขอ)
+        }
+
+        @Test
+        public void testRemoveOnUserH2Service() {
+            // keep concept mocking
+            Long id = 1000L;
+            when(userH2Service.remove(id)).thenReturn(true);
+
+            Boolean result = userH2Service.remove(id);
+
+            assertEquals(true,result);
+
+            verify(userH2Service, times(1)).remove(id); // verify (v. ตรวจสอบ) , invocations (n. การร้องขอ)
+        }
+
+        @Test
+        public void testRemoveByAnythingOnUserH2Service() {
+            // keep concept mocking
+            Long id = 1000L;
+            when(userH2Service.removeModelByAnything(id)).thenReturn(true);
+
+            Boolean result = userH2Service.removeModelByAnything(id);
+
+            assertEquals(true,result);
+
+            verify(userH2Service, times(1)).removeModelByAnything(id); // verify (v. ตรวจสอบ) , invocations (n. การร้องขอ)
         }
 
 
@@ -167,12 +201,72 @@ public class BRunnerApplicationServiceLayerTests  {
             verify(robotH2Service, times(1)).retrieveAll(); // verify (v. ตรวจสอบ) , invocations (n. การร้องขอ)
         }
 
+        @Test
+        public void testAddOnRobotH2Service() {
+            // keep concept mocking
+
+           RobotH2 robotH2 = getRobot(1000L);
+            when(robotH2Service.add(robotH2)).thenReturn(true);
+
+            Boolean result = robotH2Service.add(robotH2);
+
+            assertEquals(true,result);
+
+            verify(robotH2Service, times(1)).add(robotH2); // verify (v. ตรวจสอบ) , invocations (n. การร้องขอ)
+        }
+
+        @Test
+        public void testEditOnRobotH2Service() {
+            // keep concept mocking
+            Long id = 1000L;
+            RobotH2 robotH2 = getRobot(0L);
+
+            when(robotH2Service.edit(robotH2,id)).thenReturn(true);
+
+            Boolean result = robotH2Service.edit(robotH2,id);
+
+            assertEquals(true,result);
+
+            verify(robotH2Service, times(1)).edit(robotH2,id); // verify (v. ตรวจสอบ) , invocations (n. การร้องขอ)
+        }
+
+        @Test
+        public void testRemoveOnRobotH2Service() {
+            // keep concept mocking
+            Long id = 1000L;
+            when(robotH2Service.remove(id)).thenReturn(true);
+
+            Boolean result = robotH2Service.remove(id);
+
+            assertEquals(true,result);
+
+            verify(robotH2Service, times(1)).remove(id); // verify (v. ตรวจสอบ) , invocations (n. การร้องขอ)
+        }
+
+        @Test
+        public void testRemoveByAnythingOnRobotH2Service() {
+            // keep concept mocking
+            Long id = 1000L;
+            when(robotH2Service.removeModelByAnything(id)).thenReturn(true);
+
+            Boolean result = robotH2Service.removeModelByAnything(id);
+
+            assertEquals(true,result);
+
+            verify(robotH2Service, times(1)).removeModelByAnything(id); // verify (v. ตรวจสอบ) , invocations (n. การร้องขอ)
+        }
+
+
         private List<RobotH2> getRobots() {
             return List.of(
                     new RobotH2(1000L,"RX-0","2025-09-31",700000.0,true),
                     new RobotH2(1001L,"RX-1","2025-10-31",800000.0,true),
                     new RobotH2(1002L,"RX-2","2025-11-31",900000.0,true)
             );
+        }
+
+        private RobotH2 getRobot(Long id) {
+            return new RobotH2(id,"RX-0","2025-09-31",700000.0,true);
         }
     }
 
