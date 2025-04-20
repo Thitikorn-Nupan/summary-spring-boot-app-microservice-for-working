@@ -31,8 +31,27 @@ public class RobotH2Service extends ModelService<RobotH2> {
 
     @Override
     public List<RobotH2> retrieveAll() {
+        robots.clear();
         loadScript("reset-robots-h2.sql",jdbcTemplate.getDataSource());
         robots = jdbcTemplate.query(MySQL_CL.H2_EXTRA_ROBOT_SELECT_ALL, (rs, rowNum) -> {
+            RobotH2 robotH2 = new RobotH2(
+                    rs.getLong("rid"),
+                    rs.getString("codename"),
+                    rs.getString("releasedate"),
+                    rs.getDouble("price"),
+                    rs.getBoolean("status")
+            );
+            return robotH2;
+        });
+        return robots;
+    }
+
+    @Override
+    public List<RobotH2> retrieveAllAndSort(String sortField, String sortDesc) {
+        robots.clear();
+        loadScript("reset-robots-h2.sql",jdbcTemplate.getDataSource());
+        String sql = String.format(MySQL_CL.H2_EXTRA_ROBOT_SELECT_ALL_AND_SORT, sortField,sortDesc);
+        robots = jdbcTemplate.query(sql, (rs, rowNum) -> {
             RobotH2 robotH2 = new RobotH2(
                     rs.getLong("rid"),
                     rs.getString("codename"),
@@ -100,6 +119,7 @@ public class RobotH2Service extends ModelService<RobotH2> {
     public <U> void loadScript(String fileName) {
 
     }
+
 
     private void logRowAffected(Integer row) {
         log.debug("Robots row affected : {}" , row);

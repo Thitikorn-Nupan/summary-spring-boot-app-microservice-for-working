@@ -32,6 +32,7 @@ public class UserH2Service extends ModelService<UserH2> {
     @Override
     public List<UserH2> retrieveAll() {
         // queries with sql file
+        users.clear();
         loadScript("reset-users-h2.sql",jdbcTemplate.getDataSource());
         users = jdbcTemplate.query(MySQL_CL.H2_USERS_SELECT_ALL, (rs, rowNum) -> {
             UserH2 userH2 = new UserH2(
@@ -94,6 +95,23 @@ public class UserH2Service extends ModelService<UserH2> {
     @Override
     public <U> void loadScript(String fileName) {
 
+    }
+
+    @Override
+    public List<UserH2> retrieveAllAndSort(String sortField, String sortDesc) {
+        users.clear();
+        loadScript("reset-users-h2.sql",jdbcTemplate.getDataSource());
+        // ** Only values can be bound as parameters. Not parts of the query itself.
+        String sql = String.format(MySQL_CL.H2_USERS_SELECT_ALL_AND_SORT, sortField,sortDesc);
+        users = jdbcTemplate.query(sql, (rs, rowNum) -> {
+            UserH2 userH2 = new UserH2(
+                    rs.getLong("id"),
+                    rs.getString("username"),
+                    rs.getString("mail")
+            );
+            return userH2;
+        });
+        return users;
     }
 
     private void logRowAffected(Integer row) {

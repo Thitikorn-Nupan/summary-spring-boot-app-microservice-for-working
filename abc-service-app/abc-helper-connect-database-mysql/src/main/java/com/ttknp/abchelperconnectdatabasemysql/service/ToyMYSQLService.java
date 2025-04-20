@@ -19,12 +19,12 @@ import java.util.List;
 @Service
 public class ToyMYSQLService extends ModelService<ToyMYSQL> {
     private JdbcTemplate jdbcTemplate;
-    private List<ToyMYSQL> products;
+    private List<ToyMYSQL> toys;
     private Logger log;
     @Autowired
     public ToyMYSQLService(@Qualifier("dataSourceMySQLExtra") DataSource dataSource ) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
-        this.products = new ArrayList<>();
+        this.toys = new ArrayList<>();
         this.log = LoggerFactory.getLogger(ToyMYSQLService.class);
     }
 
@@ -44,8 +44,9 @@ public class ToyMYSQLService extends ModelService<ToyMYSQL> {
 
     @Override
     public List<ToyMYSQL> retrieveAll() {
-        products = jdbcTemplate.query(MySQL_CL.MYSQL_TOYS_SELECT_ALL, this);
-        return products;
+        toys.clear();
+        toys = jdbcTemplate.query(MySQL_CL.MYSQL_TOYS_SELECT_ALL, this);
+        return toys;
     }
 
     @Override

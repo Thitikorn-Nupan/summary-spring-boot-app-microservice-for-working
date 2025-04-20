@@ -2,6 +2,7 @@ package com.ttknp.bwebcontroller.web.privatescontrollers;
 
 import com.ttknp.abchelperconnectdatabaseh2.services.RobotH2Service;
 import com.ttknp.abchelperconnectdatabaseh2.services.UserH2Service;
+import com.ttknp.abcmodelsservice.models.common.DataTableModelService;
 import com.ttknp.abcmodelsservice.models.h2.RobotH2;
 import com.ttknp.abcmodelsservice.models.h2.UserH2;
 import com.ttknp.bservicewebcontroller.webannotations.CommonRestAPI;
@@ -32,5 +33,11 @@ public class RobotH2Controller {
                 .body(robotH2Service.retrieveAll());
     }
 
+    // ** test with common req/res
+    @GetMapping(value = "/sortBy") // params = {"id","username"}  optional
+    private DataTableModelService.Response<RobotH2> retrieveRobotsAndSortBy(@RequestBody DataTableModelService.Request request) {
+        List<RobotH2> robotH2List = robotH2Service.retrieveAllAndSort(request.getOrderBy().getName() , request.getOrderBy().getDirection() );
+        return new DataTableModelService.Response<>(request,"",robotH2List);
+    }
 
 }
