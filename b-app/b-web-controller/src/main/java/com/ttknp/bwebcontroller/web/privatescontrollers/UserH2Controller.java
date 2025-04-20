@@ -1,6 +1,7 @@
 package com.ttknp.bwebcontroller.web.privatescontrollers;
 
 import com.ttknp.abchelperconnectdatabaseh2.services.UserH2Service;
+import com.ttknp.abcmodelsservice.models.common.DataTableModelService;
 import com.ttknp.abcmodelsservice.models.h2.UserH2;
 import com.ttknp.bservicewebcontroller.exception.ContentNotAllowed;
 import com.ttknp.bservicewebcontroller.webannotations.CommonRestAPI;
@@ -26,14 +27,15 @@ public class UserH2Controller {
     }
 
     /**
-    // just don't like this way
-    @GetMapping(value = {"/", ""})
-    private @ResponseBody @ResponseStatus(HttpStatus.ACCEPTED) List<UserH2> retrieveAllUsers() {
-        return userH2Service.retrieveAllUsers();
-    }
-    */
+     * // just don't like this way
+     *
+     * @GetMapping(value = {"/", ""})
+     * private @ResponseBody @ResponseStatus(HttpStatus.ACCEPTED) List<UserH2> retrieveAllUsers() {
+     * return userH2Service.retrieveAllUsers();
+     * }
+     */
 
-    @GetMapping(value = {"/",""})
+    @GetMapping(value = {"/", ""})
     private ResponseEntity<List<UserH2>> retrieveAllUsers() {
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)
@@ -41,8 +43,8 @@ public class UserH2Controller {
     }
 
     // uri look like /searchBy?id=1&username=alex%20ryder
-    @GetMapping(value ="/searchBy",params = {"id","username"}) // params = {"id","username"}  optional
-    private ResponseEntity<String> retrieveUser(@RequestParam(required = false) Long id,@RequestParam(required = false) String username) {
+    @GetMapping(value = "/searchBy", params = {"id", "username"}) // params = {"id","username"}  optional
+    private ResponseEntity<String> retrieveUser(@RequestParam(required = false) Long id, @RequestParam(required = false) String username) {
         if (id == 0 && username.equals("T")) {
             throw new ContentNotAllowed("Test Exception Handler");
         } else {
@@ -52,17 +54,20 @@ public class UserH2Controller {
         }
     }
 
+    // ** test with common req/res
+    @GetMapping(value = "/sortBy") // params = {"id","username"}  optional
+    private DataTableModelService.Response<UserH2> retrieveUserAndSortBy(@RequestBody DataTableModelService.Request request) {
+        List<UserH2> userH2List = userH2Service.retrieveAllAndSort(request.getOrderBy().getName() , request.getOrderBy().getDirection() );
+        return new DataTableModelService.Response<>(request,"",userH2List);
+    }
+
+
     @PostMapping(value = "/add")
     private ResponseEntity<Boolean> addUser(@RequestBody UserH2 user) {
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)
                 .body(userH2Service.add(user));
     }
-
-
-
-
-
 
 
 }

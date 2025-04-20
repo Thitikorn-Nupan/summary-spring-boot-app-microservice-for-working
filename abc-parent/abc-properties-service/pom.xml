@@ -104,17 +104,25 @@
             </activation>
 
             <properties>
+
+                <!-- this prop can put on which prop want set up logging level -->
+                <area.abc.common>
+                    logging.level.root[0]=info
+                    logging.level.root[1]=debug
+                </area.abc.common>
+
                 <!-- you can access prop tag by ${...}-->
                 <area.a.runner>
                     spring.application.name=a-runner
                     server.port=${area.a.server}
+                    <!--logging.level.root[0]=info
+                    logging.level.root[1]=debug-->
+                    ${area.abc.common}
                 </area.a.runner>
 
                 <area.b.runner>
                     spring.application.name=b-runner
                     server.port=${area.b.server}
-                    logging.level.root[0]=info
-                    logging.level.root[1]=debug
                     <!--
                     ** config by properties file it does not need driver class in h2 database
                     ** but xml need it.
@@ -126,14 +134,17 @@
                     spring.jpa.show-sql=true
                     spring.h2.console.enabled=true
                     spring.h2.console.path=/h2-ui
+                    <!--logging.level.root[0]=info
+                    logging.level.root[1]=debug-->
+                    ${area.abc.common}
                 </area.b.runner>
 
                 <area.c.runner>
                     spring.application.name=c-runner
                     server.port=${area.c.server}
-                    logging.level.root[0]=info
-                    logging.level.root[1]=debug
+                    ${area.abc.common} <!-- call nested properties -->
                 </area.c.runner>
+
 
 
             </properties>
