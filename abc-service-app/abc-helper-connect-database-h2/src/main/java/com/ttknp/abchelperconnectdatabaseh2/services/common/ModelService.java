@@ -27,4 +27,9 @@ public abstract class ModelService <T> {
         populator.addScripts(new ClassPathResource(fullSqlScriptDirOnRoot)); // ClassPathResource class it looks to src of this module
         populator.execute(Objects.requireNonNull(dataSource)); // by default it'll log queries result on console
     }
+    // **
+    public abstract List<T> retrieveAllAndSort(String sortField, String sortDesc) ;
+
+
+
 }

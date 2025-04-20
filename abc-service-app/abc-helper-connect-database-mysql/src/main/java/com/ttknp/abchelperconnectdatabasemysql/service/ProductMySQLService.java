@@ -26,7 +26,7 @@ public class ProductMySQLService extends ModelService<ProductMYSQL> {
     private List<ProductMYSQL> products;
     private Logger log;
 
-    /*
+    /**
     // not working
     @Autowired
     private ProductRepository productRepository;
@@ -37,8 +37,8 @@ public class ProductMySQLService extends ModelService<ProductMYSQL> {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
         this.products = new ArrayList<>();
         this.log = LoggerFactory.getLogger(ProductMySQLService.class);
-
     }
+
     /*
     public void resetProducts() {
         // ** way to query with script sql ** if you want queries response don't do the way
@@ -71,6 +71,7 @@ public class ProductMySQLService extends ModelService<ProductMYSQL> {
 
     @Override
     public List<ProductMYSQL> retrieveAll() {
+        products.clear();
         products = jdbcTemplate.query(MySQL_CL.MYSQL_PRODUCT_SELECT_ALL,this);
         return products;
     }
