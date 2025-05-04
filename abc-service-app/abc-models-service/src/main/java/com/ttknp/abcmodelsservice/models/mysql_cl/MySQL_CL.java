@@ -18,5 +18,13 @@ public class MySQL_CL {
 
 
     public static final String MYSQL_PRODUCT_SELECT_ALL = "SELECT * FROM PRODUCTS;";
+    public static final String MYSQL_PRODUCT_DELETE = "DELETE FROM PRODUCTS WHERE ID = ?;";
     public static final String MYSQL_TOYS_SELECT_ALL = "SELECT * FROM TOYS;";
+    public static final String MYSQL_TOYS_SELECT_BY_TID = "SELECT * FROM TOYS WHERE TID = ?;";
+    public static final String MYSQL_TOYS_SELECT_TID_BY_NAME = "SELECT TID FROM TOYS WHERE NAME = ?;";
+    public static final String MYSQL_TOYS_SELECT_BY_NAME = "SELECT * FROM TOYS WHERE NAME = ?;";
+    public static final String MYSQL_DETAIL_SELECT_ALL = "SELECT * FROM DETAILS;";
+    public static final String MYSQL_DETAIL_SELECT_BY_CODE = "SELECT * FROM DETAILS WHERE CODE = ?;";
+    public static final String MYSQL_DETAIL_SELECT_CODE_BY_DID = "SELECT CODE FROM DETAILS WHERE DID = ?;";
+
 }

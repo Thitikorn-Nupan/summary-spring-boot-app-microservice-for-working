@@ -16,6 +16,7 @@ import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
@@ -72,6 +73,19 @@ public class ProductMySQLService extends ModelService<ProductMYSQL> {
     @Override
     public List<ProductMYSQL> retrieveAll() {
         products.clear();
+        try {
+            HashMap<String,String> params = new HashMap<>();
+            params.put("{NAME}","'Product 0001'");
+            params.put("{PRICE}","0.0");
+            params.put("{QUANTITY}","0");
+            params.put("{SKU}","'PD-0001'");
+            params.put("{ACTIVE}","0");
+            // jdbcTemplateMySQL.execute("truncate table <>;"); // only truncate table
+            loadScriptAbsPath("truncate-products-mysql.sql", jdbcTemplate.getDataSource()); // query by file truncate table and clear auto increment
+            loadScriptAbsPath("reset-products-mysql-params.sql",jdbcTemplate,params); // query by statement
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
         products = jdbcTemplate.query(MySQL_CL.MYSQL_PRODUCT_SELECT_ALL,this);
         return products;
     }
@@ -93,13 +107,28 @@ public class ProductMySQLService extends ModelService<ProductMYSQL> {
 
     @Override
     public <U> Boolean removeModelByAnything(U uniqueKey) {
-        return null;
+        log.info("Removing model with id  {}", uniqueKey);
+        // just for testing it's bad logic
+        HashMap<String,String> params = new HashMap<>();
+        params.put("[ACTIVE]","null");
+        params.put("{ID}",uniqueKey.toString());
+        try {
+            loadScriptAbsPath("products-mysql-backup.sql",jdbcTemplate,params);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        int rowAffected = jdbcTemplate.update(MySQL_CL.MYSQL_PRODUCT_DELETE, uniqueKey); // async method
+        if (rowAffected > 0) {
+            log.debug("Successfully removed model with id {}", uniqueKey);
+            return true;
+        } else {
+            log.debug("Failed to remove model with id {}", uniqueKey);
+            return false;
+        }
     }
 
     @Override
-    public <U> void loadScriptAbsPath(String fileName) {
-
-    }
+    public <U> void loadScriptAbsPath(String fileName) {}
 
     @Override
     public ProductMYSQL mapRow(ResultSet rs, int rowNum) throws SQLException {

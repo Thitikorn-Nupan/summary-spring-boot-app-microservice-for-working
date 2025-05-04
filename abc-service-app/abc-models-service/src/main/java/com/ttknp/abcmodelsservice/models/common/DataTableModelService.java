@@ -20,7 +20,6 @@ public class DataTableModelService {
             this.orderBy = orderBy;
         }
 
-
         public Integer getMaxLength() {
             return maxLength;
         }
