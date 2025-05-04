@@ -1,0 +1,6 @@
+com\ttknp\cextraservicewebcontroller\exception\ContentNotAllowed.class
+com\ttknp\cextraservicewebcontroller\webannotations\CommonRestAPI.class
+com\ttknp\cextraservicewebcontroller\exception\ExceptionHandle.class
+com\ttknp\cextraservicewebcontroller\services\DetailMYSQLService.class
+com\ttknp\cextraservicewebcontroller\services\common\ModelService.class
+com\ttknp\cextraservicewebcontroller\services\ToyMYSQLService.class

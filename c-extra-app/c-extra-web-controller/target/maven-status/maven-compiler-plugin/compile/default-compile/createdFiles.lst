@@ -1,0 +1,3 @@
+com\ttknp\cextrawebcontroller\controllers\DetailController.class
+com\ttknp\cextrawebcontroller\command\RequestAPICommand.class
+com\ttknp\cextrawebcontroller\controllers\ToyController.class

@@ -10,14 +10,19 @@
         <module name="b-runner" />
         <module name="abc-helper-connect-database-h2" />
         <module name="c-runner" />
-        <module name="a-web-controller" />
         <module name="abc-log-service" />
         <module name="abc-models-service" />
         <module name="b-web-controller" />
         <module name="abc-helper-connect-database-mysql" />
         <module name="c-web-controller" />
+        <module name="c-extra-service-web-controller" />
         <module name="a-runner" />
         <module name="a-service-web-controller" />
+        <module name="abc-helper-jdbc" />
+        <module name="abc-helper-datasource" />
+        <module name="a-web-controller" />
+        <module name="c-extra-runner" />
+        <module name="c-extra-web-controller" />
       </profile>
     </annotationProcessing>
   </component>
@@ -28,12 +33,17 @@
       <module name="a-web-controller" options="-parameters" />
       <module name="abc-helper-connect-database-h2" options="-parameters" />
       <module name="abc-helper-connect-database-mysql" options="-parameters" />
+      <module name="abc-helper-datasource" options="-parameters" />
+      <module name="abc-helper-jdbc" options="-parameters" />
       <module name="abc-log-service" options="-parameters" />
       <module name="abc-models-service" options="-parameters" />
       <module name="abc-properties-service" options="-parameters" />
       <module name="b-runner" options="-parameters" />
       <module name="b-service-web-controller" options="-parameters" />
       <module name="b-web-controller" options="-parameters" />
+      <module name="c-extra-runner" options="-parameters" />
+      <module name="c-extra-service-web-controller" options="-parameters" />
+      <module name="c-extra-web-controller" options="-parameters" />
       <module name="c-runner" options="-parameters" />
       <module name="c-web-controller" options="-parameters" />
     </option>
