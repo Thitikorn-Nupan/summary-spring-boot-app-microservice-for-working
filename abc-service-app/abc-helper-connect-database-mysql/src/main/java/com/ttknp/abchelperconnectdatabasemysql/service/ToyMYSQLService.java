@@ -49,6 +49,7 @@ public class ToyMYSQLService extends ModelService<ToyMYSQL> {
         return toys;
     }
 
+
     @Override
     public Boolean add(ToyMYSQL toyMYSQL) {
         return null;
@@ -70,9 +71,8 @@ public class ToyMYSQLService extends ModelService<ToyMYSQL> {
     }
 
     @Override
-    public <U> void loadScriptAbsPath(String fileName) {
+    public <U> void loadScriptAbsPath(String fileName) {}
 
-    }
 
     @Override
     public ToyMYSQL mapRow(ResultSet rs, int rowNum) throws SQLException {

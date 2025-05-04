@@ -17,6 +17,10 @@
         <option value="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/pom.xml" />
         <option value="$PROJECT_DIR$/c-app/c-web-controller/pom.xml" />
         <option value="$PROJECT_DIR$/c-app/c-runner/pom.xml" />
+        <option value="$PROJECT_DIR$/c-extra-app/c-extra-service-web-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/c-extra-app/c-extra-runner/pom.xml" />
+        <option value="$PROJECT_DIR$/abc-service-app/abc-helper-datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/c-extra-app/c-extra-web-controller/pom.xml" />
       </list>
     </option>
   </component>

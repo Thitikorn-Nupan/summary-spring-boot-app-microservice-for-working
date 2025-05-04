@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ttknp</groupId>
+        <artifactId>abc-properties-service</artifactId>
+        <relativePath>../../abc-parent/abc-properties-service</relativePath>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>com.ttknp</groupId>
+    <artifactId>c-extra-service-web-controller</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>c-extra-service-web-controller</name>
+    <description>c-extra-service-web-controller</description>
+    <url/>
+    <licenses>
+        <license/>
+    </licenses>
+    <developers>
+        <developer/>
+    </developers>
+    <scm>
+        <connection/>
+        <developerConnection/>
+        <tag/>
+        <url/>
+    </scm>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+    <dependencies>
+
+
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ttknp</groupId>
+            <artifactId>abc-helper-jdbc</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+       <!-- <dependency>
+            <groupId>com.ttknp</groupId>
+            <artifactId>abc-models-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>-->
+
+    </dependencies>
+
+    <build>
+
+        <plugins>
+            <!-- plugin for loading jar on local -->
+            <!-- for buiding -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>3.1.3</version>
+                <executions>
+
+                    <execution>
+                        <id>abc-jdbc-helper</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <configuration>
+                            <groupId>com.ttknp</groupId>
+                            <artifactId>abc-helper-jdbc</artifactId>
+                            <version>0.0.1-SNAPSHOT</version>
+                            <packaging>jar</packaging>
+                            <file>${jar.local.path}/abc-helper-jdbc.jar</file>
+                        </configuration>
+                    </execution>
+
+                    <!--
+                    False descript
+                    you see
+                    i don't import abc-models-service module because i import on abc-helper-jdbc module
+                    but i have to import when build because it'll not found abc-models-service module when build
+                    -->
+                    <!--<execution>
+                        <id>abc-models-service</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <configuration>
+                            <groupId>com.ttknp</groupId>
+                            <artifactId>abc-models-service</artifactId>
+                            <version>0.0.1-SNAPSHOT</version>
+                            <packaging>jar</packaging>
+                            <file>${jar.local.path}/abc-models-service.jar</file>
+                        </configuration>
+                    </execution>-->
+
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
