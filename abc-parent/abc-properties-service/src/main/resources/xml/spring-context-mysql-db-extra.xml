@@ -4,12 +4,14 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- primary="true" work same @Primary for fix error have the same beans -->
-
+    <!--
+    // focus on parent it have no driver (DriverManagerDataSource) but still get driver such as script !
+    -->
     <bean name="dataSourceMySQLExtra" id="dataSourceMySQLExtra" class="org.springframework.jdbc.datasource.DriverManagerDataSource" > <!--destroy-method="close"-->
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/toystore"/>
         <property name="username" value="ttknp"/>
         <property name="password" value="12345"/>
     </bean>
+
 </beans>

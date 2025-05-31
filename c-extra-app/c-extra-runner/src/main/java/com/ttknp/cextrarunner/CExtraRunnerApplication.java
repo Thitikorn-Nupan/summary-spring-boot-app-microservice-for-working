@@ -15,8 +15,11 @@ import java.util.Set;
 @Configuration
 public class CExtraRunnerApplication extends AbcHelperDatasourceApplication {
 
+    // it's amazing
+    // focus on parent it have no driver sql but still get driver such as script !
+    // but in sub module as c-extra-web-controller should be driver !
     private static final Set<String> absPathsBeanOnXml = new HashSet<>(Arrays.asList(
-            "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/c-extra-app/c-extra-service-web-controller/src/main/resources/xml/spring-context-mysql-db-extra.xml"
+            "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-mysql-db-extra.xml"
     ));
 
     public static void main(String[] args) {
