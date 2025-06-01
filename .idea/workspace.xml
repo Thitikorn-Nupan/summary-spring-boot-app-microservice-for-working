@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed3deec1-058f-4c6b-b77d-f23ad3c6dad9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-jdbc/target/classes/com/ttknp/abchelperjdbc/helper/JdbcHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-jdbc/target/classes/com/ttknp/abchelperjdbc/helper/JdbcHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-extra-app/c-extra-runner/src/main/java/com/ttknp/cextrarunner/CExtraRunnerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/c-extra-app/c-extra-runner/src/main/java/com/ttknp/cextrarunner/CExtraRunnerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-extra-app/c-extra-runner/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/c-extra-app/c-extra-runner/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-extra-app/c-extra-runner/target/classes/com/ttknp/cextrarunner/CExtraRunnerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/c-extra-app/c-extra-runner/target/classes/com/ttknp/cextrarunner/CExtraRunnerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-extra-app/c-extra-service-web-controller/src/main/resources/xml/spring-context-mysql-db-extra.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-mysql-db-extra.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-extra-app/c-extra-service-web-controller/target/classes/xml/spring-context-mysql-db-extra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/step merg modules on sumary-spring-boot-career" beforeDir="false" afterPath="$PROJECT_DIR$/step merg modules on sumary-spring-boot-career" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,9 +109,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.38398117",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java",
     "vue.rearranger.settings.migration": "true"
@@ -350,7 +345,8 @@
       <workItem from="1746091225936" duration="10099000" />
       <workItem from="1746255676594" duration="24082000" />
       <workItem from="1746943406383" duration="6976000" />
-      <workItem from="1748692039474" duration="8128000" />
+      <workItem from="1748692039474" duration="10702000" />
+      <workItem from="1748767949689" duration="3493000" />
     </task>
     <servers />
   </component>
