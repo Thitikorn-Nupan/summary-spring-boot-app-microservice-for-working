@@ -22,7 +22,7 @@ public class AbcHelperDatasourceApplication {
 
     protected static final Logger log = LoggerFactory.getLogger(AbcHelperDatasourceApplication.class);
 
-    // get resource by specify path
+    // get resource database by specify path
     protected static void runSpringBootWithoutImportResourceAnnotation(Class<?> theClass, Set<String> absolutePathsBeanOnXml , String... theArgs) {
         log.info("Starting Spring Boot Application");
         // ConfigurableEnvironment configurableEnvironment = null;
@@ -36,7 +36,7 @@ public class AbcHelperDatasourceApplication {
         logProperties(configurableEnvironment);
     }
 
-    // get resource from application.properties based on extend class
+    // get resource database from application.properties as default property based on extend class
     protected static void runSpringBootWithoutImportResourceAnnotation(Class<?> theClass, String... theArgs) {
         log.info("Starting Spring Boot Application");
         // ConfigurableEnvironment configurableEnvironment = null;

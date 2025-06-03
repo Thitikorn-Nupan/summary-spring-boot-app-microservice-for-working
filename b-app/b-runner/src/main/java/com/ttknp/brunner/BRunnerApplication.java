@@ -27,8 +27,12 @@ public class BRunnerApplication {
     // ** Note parent of this bean must have a database driver
     // set the bean paths
     private static final Set<String> pathBeanOnXml = new HashSet<>(Arrays.asList(
-            "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-service-app/abc-helper-connect-database-h2/src/main/resources/xml/spring-context-h2-db.xml",
-            "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-service-app/abc-helper-connect-database-h2/src/main/resources/xml/spring-context-h2-db-extra.xml"
+            // have driver
+            // "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-service-app/abc-helper-connect-database-h2/src/main/resources/xml/spring-context-h2-db.xml",
+            // "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-service-app/abc-helper-connect-database-h2/src/main/resources/xml/spring-context-h2-db-extra.xml"
+            // no driver
+            "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-h2-db.xml",
+            "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-h2-db-extra.xml"
     ));
 
     protected static void runSpringBootWithoutImportResourceAnnotation(Class<?> theClass, String... theArgs) {
