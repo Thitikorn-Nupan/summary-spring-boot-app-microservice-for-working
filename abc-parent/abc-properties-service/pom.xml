@@ -159,6 +159,7 @@
                 <area.c.extra.runner>
                     spring.application.name=c-extra-runner
                     server.port=${area.c.extra.server}
+                    context.path.mysql=file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-mysql-db-extra.xml
                     ${area.abc.common} <!-- call nested properties -->
                 </area.c.extra.runner>
 

@@ -7,8 +7,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.ApplicationPidFileWriter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.core.io.ClassPathResource;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.management.ManagementFactory;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Properties;
 import java.util.Set;
 
 
@@ -16,6 +22,7 @@ public class AbcHelperDatasourceApplication {
 
     protected static final Logger log = LoggerFactory.getLogger(AbcHelperDatasourceApplication.class);
 
+    // get resource by specify path
     protected static void runSpringBootWithoutImportResourceAnnotation(Class<?> theClass, Set<String> absolutePathsBeanOnXml , String... theArgs) {
         log.info("Starting Spring Boot Application");
         // ConfigurableEnvironment configurableEnvironment = null;
@@ -26,6 +33,30 @@ public class AbcHelperDatasourceApplication {
         application.setSources(absolutePathsBeanOnXml);
         // get env from app
         ConfigurableEnvironment configurableEnvironment = application.run(theArgs).getEnvironment();
+        logProperties(configurableEnvironment);
+    }
+
+    // get resource from application.properties based on extend class
+    protected static void runSpringBootWithoutImportResourceAnnotation(Class<?> theClass, String... theArgs) {
+        log.info("Starting Spring Boot Application");
+        // ConfigurableEnvironment configurableEnvironment = null;
+        // start app
+        SpringApplication application = new SpringApplication(theClass);
+        application.addListeners(new ApplicationPidFileWriter());
+        // set resource paths to app
+        final Properties properties = new Properties();
+        try (InputStream input = new ClassPathResource("application.properties").getInputStream()) {
+            properties.load(input);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        application.setSources(new HashSet<>(Collections.singleton(properties.getProperty("context.path.mysql"))));
+        // get env from app
+        ConfigurableEnvironment configurableEnvironment = application.run(theArgs).getEnvironment();
+        logProperties(configurableEnvironment);
+    }
+
+    private static void logProperties(ConfigurableEnvironment configurableEnvironment) {
         log.info(
                 "visual name {} \nenvironment resource {} \n applicaiton name & port {} & {} \n",
                 ManagementFactory.getRuntimeMXBean().getName(),
@@ -40,5 +71,6 @@ public class AbcHelperDatasourceApplication {
         // System.out.println("env exists System.getProperties() : {}"+ configurableEnvironment.getSystemProperties()); // {java.specification.version=22, sun.cpu.isalist=amd64, sun.jnu.encoding=MS874, java.class
         log.info("Spring Boot Application completed");
     }
+
 
 }
