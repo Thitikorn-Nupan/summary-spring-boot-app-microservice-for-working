@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-service-app\abc-models-service\target/abc-models-service.jar" tofile="B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/libs/abc-models-service.jar"/>
+</target>
+</project>

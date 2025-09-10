@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\b-app\b-service-web-controller\target/b-service-web-controller.jar" tofile="B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/libs/b-service-web-controller.jar"/>
+</target>
+</project>

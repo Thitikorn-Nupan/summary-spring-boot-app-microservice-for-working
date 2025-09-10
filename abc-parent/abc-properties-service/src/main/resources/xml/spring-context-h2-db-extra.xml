@@ -6,12 +6,12 @@
 
     <!-- ***  when i import this xml to b-runner it'll error driver -->
     <!-- primary="true" work same @Primary for fix error have the same beans -->
-    <!--<bean primary="true" name="dataSourceSQL2" id="dataSourceSQL2" class="org.springframework.jdbc.datasource.DriverManagerDataSource" > &lt;!&ndash;destroy-method="close"&ndash;&gt;
-        <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-        <property name="url" value="jdbc:sqlserver://localhost:1433;database=TTKNP;encrypt=true;trustServerCertificate=true;"/>
-        <property name="username" value="ttknp"/>
-        <property name="password" value="Arch.890.098"/>
-    </bean>-->
+    <bean name="dataSourceH2Extra" id="dataSourceH2Extra" class="org.springframework.jdbc.datasource.DriverManagerDataSource" > <!--destroy-method="close"-->
+        <property name="driverClassName" value="org.h2.Driver"/>
+        <property name="url" value="jdbc:h2:B:/h2-database/db/database_b_extra_web_controller"/>
+        <property name="username" value="sa"/>
+        <property name="password" value=""/>
+    </bean>
 
 
 </beans>

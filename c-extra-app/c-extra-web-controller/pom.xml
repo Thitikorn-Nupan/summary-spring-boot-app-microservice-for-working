@@ -66,6 +66,31 @@
 
                 </executions>
             </plugin>
+            <!--
+                To specify the output directory for your Spring Boot executable JAR file after the build process,
+                you typically configure your build tool (Maven or Gradle) to copy or move the generated JAR to the desired location.
+                You can use the maven-antrun-plugin to copy the JAR to a different directory during the install phase.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version> <!-- Use a recent version -->
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <configuration>
+                            <target>
+                                <!-- tofile="" is part to sent the copy -->
+                                <copy file="${project.build.directory}/${project.artifactId}.jar"
+                                      tofile="B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/libs/c-extra-web-controller.jar"/>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 

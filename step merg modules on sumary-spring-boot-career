@@ -1,5 +1,3 @@
-1. Project > Project Files
-2. Clicked right > F4
-3. Project Settings > Modules
-4. Add Main Module
-5. Project Files > Project
+1. File > Project Structure
+2. Modules
+3. Add Main Module (Without add content root)
