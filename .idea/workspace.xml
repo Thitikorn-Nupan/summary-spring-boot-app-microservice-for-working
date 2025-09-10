@@ -5,14 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed3deec1-058f-4c6b-b77d-f23ad3c6dad9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-h2-db-extra.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-h2-db-extra.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-h2-db.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-h2-db.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/common/ModelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/src/main/java/com/ttknp/abchelperconnectdatabaseh2/services/common/ModelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-datasource/src/main/java/com/ttknp/abchelperdatasource/AbcHelperDatasourceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-datasource/src/main/java/com/ttknp/abchelperdatasource/AbcHelperDatasourceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/src/main/java/com/ttknp/abcmodelsservice/models/paths/AbsolutePathUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/src/main/java/com/ttknp/abcmodelsservice/models/paths/AbsolutePathUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b-app/b-runner/src/main/java/com/ttknp/brunner/BRunnerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/src/main/java/com/ttknp/brunner/BRunnerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-service-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-service-web-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a-app/a-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/a-app/a-web-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-parent/abc-properties-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-parent/abc-properties-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/abc-helper-connect-database-h2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-h2/target/abc-helper-connect-database-h2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/abc-helper-connect-database-mysql.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-connect-database-mysql/target/abc-helper-connect-database-mysql.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-datasource/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-datasource/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-datasource/target/abc-helper-datasource.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-datasource/target/abc-helper-datasource.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-jdbc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-jdbc/target/abc-helper-jdbc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-jdbc/target/abc-helper-jdbc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-helper-jdbc/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-helper-jdbc/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-log-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-log-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/abc-log-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/abc-log-service.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-log-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/abc-models-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/abc-models-service.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/abc-service-app/abc-models-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-runner/target/b-runner.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-service-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-service-web-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b-app/b-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/b-app/b-web-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c-app/c-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c-app/c-web-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c-extra-app/c-extra-service-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c-extra-app/c-extra-service-web-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c-extra-app/c-extra-web-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c-extra-app/c-extra-web-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/abc-helper-connect-database-h2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/abc-helper-connect-database-h2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/abc-helper-connect-database-mysql.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/abc-helper-connect-database-mysql.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/abc-helper-datasource.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/abc-helper-datasource.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/abc-helper-jdbc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/abc-helper-jdbc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/abc-log-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/abc-log-service.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/abc-models-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/abc-models-service.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,66 +92,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BRunnerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CExtraRunnerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CRunnerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ARunnerApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ARunnerApplicationTests.t1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ARunnerApplicationTests.testHelloWorld.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ARunnerApplicationTests.testretRetrieveDemoStudentFromDataSet.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ARunnerApplicationTests.testretRieveDemoStudentsFromDataSet.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.testRemoveByAnythingOnRobotH2Service.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest.testRemoveByAnythingOnUserH2Service.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationServiceLayerTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationServiceLayerTests.reads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationServiceLayerTests.reads1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationServiceLayerTests.testAddOnUserH2Service.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationServiceLayerTests.testConnection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationServiceLayerTests.testConnections.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationTests$UserH2Tests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationTests$UserH2Tests.testRetrieveAllUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationTests.testExceptionHandlerOnRetrieveUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BRunnerApplicationTests.testHelloWorld.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ARunnerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.BRunnerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CExtraRunnerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CRunnerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
-    &quot;database.data.extractors.current.id&quot;: &quot;SQL Inserts&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;qa&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.38398117&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BRunnerApplication.executor": "Run",
+    "Application.CExtraRunnerApplication.executor": "Run",
+    "Application.CRunnerApplication.executor": "Run",
+    "JUnit.ARunnerApplicationTests.executor": "Run",
+    "JUnit.ARunnerApplicationTests.t1.executor": "Run",
+    "JUnit.ARunnerApplicationTests.testHelloWorld.executor": "Run",
+    "JUnit.ARunnerApplicationTests.testretRetrieveDemoStudentFromDataSet.executor": "Run",
+    "JUnit.ARunnerApplicationTests.testretRieveDemoStudentsFromDataSet.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests$RobotH2ServiceTest.testRemoveByAnythingOnRobotH2Service.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests$UserH2ServiceTest.testRemoveByAnythingOnUserH2Service.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.reads.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.reads1.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.testAddOnUserH2Service.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.testConnection.executor": "Run",
+    "JUnit.BRunnerApplicationServiceLayerTests.testConnections.executor": "Run",
+    "JUnit.BRunnerApplicationTests$UserH2Tests.executor": "Run",
+    "JUnit.BRunnerApplicationTests$UserH2Tests.testRetrieveAllUsers.executor": "Run",
+    "JUnit.BRunnerApplicationTests.executor": "Run",
+    "JUnit.BRunnerApplicationTests.testExceptionHandlerOnRetrieveUser.executor": "Run",
+    "JUnit.BRunnerApplicationTests.testHelloWorld.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ARunnerApplication.executor": "Run",
+    "Spring Boot.BRunnerApplication.executor": "Run",
+    "Spring Boot.CExtraRunnerApplication.executor": "Run",
+    "Spring Boot.CRunnerApplication.executor": "Run",
+    "dart.analysis.tool.window.visible": "false",
+    "database.data.extractors.current.export.id": "SQL Inserts",
+    "database.data.extractors.current.id": "SQL Inserts",
+    "git-widget-placeholder": "qa",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.38398117",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="B:\practice-java-one-jetbrains\spring-boot-skills\lab_core_36\sumary-spring-boot-career\abc-parent\abc-properties-service\src\main\resources\xml" />
@@ -353,7 +377,10 @@
       <workItem from="1746943406383" duration="6976000" />
       <workItem from="1748692039474" duration="10702000" />
       <workItem from="1748767949689" duration="4725000" />
-      <workItem from="1748922781295" duration="6500000" />
+      <workItem from="1748922781295" duration="6631000" />
+      <workItem from="1754114394833" duration="610000" />
+      <workItem from="1757232853705" duration="4283000" />
+      <workItem from="1757487316964" duration="755000" />
     </task>
     <servers />
   </component>
