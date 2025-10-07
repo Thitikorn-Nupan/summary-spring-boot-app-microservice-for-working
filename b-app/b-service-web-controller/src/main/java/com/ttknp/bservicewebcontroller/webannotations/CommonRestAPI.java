@@ -1,6 +1,7 @@
 package com.ttknp.bservicewebcontroller.webannotations;
 
 import org.springframework.core.annotation.AliasFor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +15,10 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @RestController
 @RequestMapping
+@CrossOrigin
 public @interface CommonRestAPI {
     @AliasFor(annotation = RequestMapping.class) // have to specify alias for annotation because value more than one annotation
-    String value() default "";
+    String[] value() default {""};
+    @AliasFor(annotation = CrossOrigin.class)
+    String[] origins() default {""};
 }

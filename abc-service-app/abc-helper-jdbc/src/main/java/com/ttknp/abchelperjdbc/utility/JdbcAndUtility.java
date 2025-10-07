@@ -48,26 +48,20 @@ public class JdbcAndUtility {
         StringBuilder stringBuilder = readSQLFileAsStatement(fullSqlScriptDirOnRoot);
         String sql = stringBuilder.toString();
         log.info("Loaded sql script as statement  {}" , sql);
-
         int paramCount = params.size();
         String[] keys = new String[paramCount];
         String[] values = new String[paramCount];
 
         for (int i = 0; i < paramCount; i++) {
-
             String key = params.keySet().toArray()[i].toString();
             String value = params.values().toArray()[i].toString();
-
             keys[i] = key;
             values[i] = value;
-
         }
-
 
         for (int i = 0; i < paramCount ; i++) {
             sql = sql.replace(keys[i], values[i]); // replace and update
         }
-
         jdbcTemplateSQL.execute(sql); // in mysql you can't execute many statements by execute(<queries>)
         log.info("Queried sql script as statement {}" , sql);
     }

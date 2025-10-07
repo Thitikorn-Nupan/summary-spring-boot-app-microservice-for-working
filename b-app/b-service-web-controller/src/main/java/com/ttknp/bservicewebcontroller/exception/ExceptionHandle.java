@@ -1,6 +1,5 @@
 package com.ttknp.bservicewebcontroller.exception;
 
-import com.ttknp.bservicewebcontroller.exception.ContentNotAllowed;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -15,7 +14,7 @@ public class ExceptionHandle {
         Just throw your handler will be enough
     */
     @ExceptionHandler(value = ContentNotAllowed.class)
-    private ResponseEntity getNotAllowed(ContentNotAllowed exception){
+    private ResponseEntity<?> getNotAllowed(ContentNotAllowed exception){
         return ResponseEntity
                 .status(HttpStatus.NOT_ACCEPTABLE)
                 .header("Message", exception.getMessage())

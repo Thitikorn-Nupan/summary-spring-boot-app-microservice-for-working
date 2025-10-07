@@ -13,6 +13,7 @@ import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
+import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -23,9 +24,9 @@ import java.util.Objects;
 @Service
 public class ProductMySQLService extends ModelService<ProductMYSQL> {
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
     private List<ProductMYSQL> products;
-    private Logger log;
+    private final Logger log;
 
     /**
     // not working
@@ -70,19 +71,27 @@ public class ProductMySQLService extends ModelService<ProductMYSQL> {
         loadScriptAbsPath("reset-products-mysql.sql",jdbcTemplate.getDataSource());
     }
 
+    public void resetProductsAndNoParams() {
+        loadScriptAbsPath("truncate-products-mysql.sql", jdbcTemplate.getDataSource()); // query by file truncate table and clear auto increment
+        loadScriptAbsPath("reset-products-mysql-no-params.sql",jdbcTemplate.getDataSource());
+    }
+
+    public void resetProductsAndPassParams() throws IOException {
+        loadScriptAbsPath("truncate-products-mysql.sql", jdbcTemplate.getDataSource()); // query by file truncate table and clear auto increment
+        HashMap<String,String> params = new HashMap<>();
+        params.put("{NAME}","'Product 0001'");
+        params.put("{PRICE}","0.0");
+        params.put("{QUANTITY}","0");
+        params.put("{SKU}","'PD-0001'");
+        params.put("{ACTIVE}","0");
+        loadScriptAbsPath("reset-products-mysql-params.sql",jdbcTemplate,params); // query by statement
+    }
+
     @Override
     public List<ProductMYSQL> retrieveAll() {
         products.clear();
         try {
-            HashMap<String,String> params = new HashMap<>();
-            params.put("{NAME}","'Product 0001'");
-            params.put("{PRICE}","0.0");
-            params.put("{QUANTITY}","0");
-            params.put("{SKU}","'PD-0001'");
-            params.put("{ACTIVE}","0");
-            // jdbcTemplateMySQL.execute("truncate table <>;"); // only truncate table
-            loadScriptAbsPath("truncate-products-mysql.sql", jdbcTemplate.getDataSource()); // query by file truncate table and clear auto increment
-            loadScriptAbsPath("reset-products-mysql-params.sql",jdbcTemplate,params); // query by statement
+            resetProductsAndPassParams();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

@@ -88,10 +88,10 @@
                 </executions>
             </plugin>
             <!--
-                To specify the output directory for your Spring Boot executable JAR file after the build process,
-                you typically configure your build tool (Maven or Gradle) to copy or move the generated JAR to the desired location.
-                You can use the maven-antrun-plugin to copy the JAR to a different directory during the install phase.
-            -->
+               To specify the output directory for your Spring Boot executable JAR file after the build process,
+               you typically configure your build tool (Maven or Gradle) to copy or move the generated JAR to the desired location.
+               You can use the maven-antrun-plugin to copy the JAR to a different directory during the install phase.
+           -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>

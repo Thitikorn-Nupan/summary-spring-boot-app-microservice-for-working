@@ -1,13 +1,12 @@
 package com.ttknp.awebcontroller.service;
 
 import com.ttknp.awebcontroller.entity.Student;
-
 import java.util.HashSet;
 import java.util.Set;
 
 public class StudentService {
 
-    private Set<Student> students;
+    private final Set<Student> students;
 
     public StudentService() {
         students = new HashSet<>();

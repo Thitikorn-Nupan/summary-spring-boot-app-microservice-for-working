@@ -6,11 +6,12 @@ import com.ttknp.awebcontroller.entity.Student;
 import com.ttknp.awebcontroller.service.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.Set;
+
 //@RestController
 //@RequestMapping(value = "/a1")
-@CommonRestAPI(value = "/a1") // *** ide bug! it can't run app on ide
+// Note! you can test origin on postman like, Add an Origin header: to your request with the value of the origin you want to test (e.g., http://localhost:3000). This simulates a cross-origin request.
+@CommonRestAPI(value = {"/a1","/A1"},origins = "*") // *** ide bug! it can't run app on ide
 public class A1Controller extends AbcLogServiceApplication {
 
 	private final StudentService studentService;
@@ -34,7 +35,6 @@ public class A1Controller extends AbcLogServiceApplication {
 		log.debug("Get request students");
 		return studentService.getStudents();
 	}
-
 
 	@GetMapping(value = "/student")
 	@ResponseBody

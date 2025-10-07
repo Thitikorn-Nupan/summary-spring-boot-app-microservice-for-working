@@ -4,7 +4,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/c")
+@RequestMapping(value = "/c1")
+@CrossOrigin(origins = "*")
 public class CController {
 
     @GetMapping(value = {"/","","/hello-world"})

@@ -4,14 +4,13 @@ package com.ttknp.abchelperconnectdatabaseh2.services.common;
 import com.ttknp.abcmodelsservice.models.paths.AbsolutePathUtility;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
-
 import javax.sql.DataSource;
 import java.util.List;
 import java.util.Objects;
 
 // use abs class with extends
 public abstract class ModelService <T> {
-    private String sqlScriptDirOnRoot = AbsolutePathUtility.SQL_SCRIPT_DIR_ON_ROOT;
+    private final String sqlScriptDirOnRoot = AbsolutePathUtility.SQL_SCRIPT_DIR_ON_ROOT;
     public abstract List<T> retrieveAll() ;
     public abstract Boolean add(T t);
     public abstract Boolean edit(T t,Long pk);

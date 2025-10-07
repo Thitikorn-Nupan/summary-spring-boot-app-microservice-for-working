@@ -117,7 +117,6 @@
             </activation>
 
             <properties>
-
                 <!-- this prop can put on which prop want set up logging level -->
                 <area.abc.common>
                     logging.level.root[0]=info
@@ -128,9 +127,9 @@
                 <area.a.runner>
                     spring.application.name=a-runner
                     server.port=${area.a.server}
+                    ${area.abc.common}
                     <!--logging.level.root[0]=info
                     logging.level.root[1]=debug-->
-                    ${area.abc.common}
                 </area.a.runner>
 
                 <area.b.runner>
@@ -147,9 +146,9 @@
                     spring.jpa.show-sql=true
                     spring.h2.console.enabled=true
                     spring.h2.console.path=/h2-ui
+                    ${area.abc.common}
                     <!--logging.level.root[0]=info
                     logging.level.root[1]=debug-->
-                    ${area.abc.common}
                 </area.b.runner>
 
                 <area.c.runner>
@@ -164,9 +163,6 @@
                     context.path.mysql=file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-mysql-db-extra.xml
                     ${area.abc.common} <!-- call nested properties -->
                 </area.c.extra.runner>
-
-
-
             </properties>
 
         </profile>

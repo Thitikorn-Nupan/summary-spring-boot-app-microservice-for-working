@@ -17,7 +17,6 @@ public class JdbcMapRowService {
          */
         ResultSetMetaData metaData = rs.getMetaData(); // ** usefully !
         int columns = metaData.getColumnCount();  // ** get total columns of row
-
         for (int i = 1; i <= columns; i++) {
             String columnName = metaData.getColumnLabel(i); // ** get column name
             String columnValue = rs.getString(i); // ** get column value

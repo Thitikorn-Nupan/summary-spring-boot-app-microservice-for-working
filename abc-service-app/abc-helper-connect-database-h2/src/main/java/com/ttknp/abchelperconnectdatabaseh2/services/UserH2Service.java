@@ -18,9 +18,9 @@ import java.util.List;
 @Service
 public class UserH2Service extends ModelService<UserH2> {
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
     private List<UserH2> users;
-    private Logger log;
+    private final Logger log;
 
     @Autowired // ** try manual on mysql
     public UserH2Service(@Qualifier("dataSourceH2") DataSource dataSource) {

@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,9 +17,10 @@ import java.util.List;
 
 @Service
 public class ToyMYSQLService extends ModelService<ToyMYSQL> {
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
     private List<ToyMYSQL> toys;
-    private Logger log;
+    private final Logger log;
+
     @Autowired
     public ToyMYSQLService(@Qualifier("dataSourceMySQLExtra") DataSource dataSource ) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);

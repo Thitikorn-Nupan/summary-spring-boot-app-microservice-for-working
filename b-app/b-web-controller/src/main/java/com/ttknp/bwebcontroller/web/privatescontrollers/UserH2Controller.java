@@ -9,17 +9,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 // sometime ide fucking เอ๋อ
 // @RestController
 // @RequestMapping(value = "/b/user-h2")
-@CommonRestAPI(value = "/b/user-h2")
+@CommonRestAPI(value = "/b1/user-h2",origins = "*")
 public class UserH2Controller {
 
 
-    private UserH2Service userH2Service;
+    private final UserH2Service userH2Service;
 
     @Autowired
     public UserH2Controller(UserH2Service userH2Service) {

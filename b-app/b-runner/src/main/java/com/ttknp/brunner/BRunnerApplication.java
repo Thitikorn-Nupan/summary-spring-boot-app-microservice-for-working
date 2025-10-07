@@ -8,15 +8,12 @@ import org.springframework.boot.context.ApplicationPidFileWriter;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.ConfigurableEnvironment;
-
 import java.lang.management.ManagementFactory;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-
-// *** specify this spring boot app to scan app on "com.ttknp*" this path
-// *** meaning all multiple modules that start with "com.ttknp*" can work well on this app
+// *** specify this spring boot app to scan app on "com.ttknp*" this path *** meaning all multiple modules that start with "com.ttknp*" can work well on this app
 @ComponentScan(basePackages = {"com.ttknp"})
 @SpringBootApplication
 @Configuration
@@ -27,10 +24,10 @@ public class BRunnerApplication {
     // ** Note parent of this bean must have a database driver
     // set the bean paths
     private static final Set<String> pathBeanOnXml = new HashSet<>(Arrays.asList(
-            // have driver
+            // *** have driver
             // "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-service-app/abc-helper-connect-database-h2/src/main/resources/xml/spring-context-h2-db.xml",
             // "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-service-app/abc-helper-connect-database-h2/src/main/resources/xml/spring-context-h2-db-extra.xml"
-            // no driver
+            // *** no driver
             "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-h2-db.xml",
             "file:B:/practice-java-one-jetbrains/spring-boot-skills/lab_core_36/sumary-spring-boot-career/abc-parent/abc-properties-service/src/main/resources/xml/spring-context-h2-db-extra.xml"
     ));

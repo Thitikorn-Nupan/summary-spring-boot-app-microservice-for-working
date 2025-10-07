@@ -2,7 +2,6 @@ package com.ttknp.abcmodelsservice.models.mysql;
 
 
 public class ProductMYSQL {
-
     private Long id;
     private String name;
     private Double price;

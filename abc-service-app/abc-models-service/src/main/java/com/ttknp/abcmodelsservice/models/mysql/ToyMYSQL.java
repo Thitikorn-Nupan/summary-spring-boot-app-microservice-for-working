@@ -2,9 +2,7 @@ package com.ttknp.abcmodelsservice.models.mysql;
 
 import java.sql.Timestamp;
 
-
 public class ToyMYSQL {
-
     private Long tid;
     private String name;
     private String status;

@@ -1,6 +1,5 @@
 package com.ttknp.abcmodelsservice.models.h2;
 
-
 public class UserH2 {
     private Long id;
     private String username;

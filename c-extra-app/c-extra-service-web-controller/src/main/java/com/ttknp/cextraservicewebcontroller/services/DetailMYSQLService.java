@@ -3,18 +3,17 @@ package com.ttknp.cextraservicewebcontroller.services;
 import com.ttknp.abchelperjdbc.helper.JdbcHelper;
 import com.ttknp.abchelperjdbc.utility.JdbcAndUtility;
 import com.ttknp.abcmodelsservice.models.mysql.DetailMYSQL;
-import com.ttknp.abcmodelsservice.models.mysql.ToyMYSQL;
 import com.ttknp.abcmodelsservice.models.mysql_cl.MySQL_CL;
 import com.ttknp.cextraservicewebcontroller.services.common.ModelService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-
 import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 
 @Service // use this bean by inject
 public class DetailMYSQLService extends ModelService<DetailMYSQL> {

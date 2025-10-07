@@ -2,7 +2,6 @@ package com.ttknp.abcmodelsservice.models.mysql;
 
 
 public class DetailMYSQL {
-
     private Long did;
     private String code;
 

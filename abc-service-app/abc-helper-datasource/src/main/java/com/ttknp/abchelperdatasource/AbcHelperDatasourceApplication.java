@@ -3,12 +3,9 @@ package com.ttknp.abchelperdatasource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.ApplicationPidFileWriter;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.io.ClassPathResource;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.management.ManagementFactory;

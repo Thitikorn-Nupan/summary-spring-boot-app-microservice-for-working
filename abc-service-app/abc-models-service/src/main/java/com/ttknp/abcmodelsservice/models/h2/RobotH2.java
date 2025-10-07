@@ -2,13 +2,9 @@ package com.ttknp.abcmodelsservice.models.h2;
 
 public class RobotH2 {
     private Long rid;
-
     private String codename;
-
     private String releaseDate;
-
     private Double price;
-
     private Boolean status;
 
     public RobotH2(Long rid, String codename, String releaseDate, Double price, Boolean status) {
